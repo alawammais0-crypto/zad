@@ -4,13 +4,44 @@
 ![Expo](https://img.shields.io/badge/Expo-v54.0-black?logo=expo)
 ![.NET](https://img.shields.io/badge/.NET-10.0-512BD4?logo=dotnet)
 ![TypeScript](https://img.shields.io/badge/TypeScript-v5.3-3178C6?logo=typescript)
+![Reanimated 4](https://img.shields.io/badge/Reanimated-v4.1-purple?logo=react)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
 **ZAD (زاد)** is a full-stack, enterprise-grade food delivery application built for Suwayda, Syria. It connects hungry customers with top local restaurants, featuring a sleek React Native mobile interface, real-time order status tracking, digital wallet management, and a robust ASP.NET Core 10 backend API.
 
 ---
 
-## 🌟 Key Features
+## 📱 Application Interfaces & Animations (واجهات التطبيق والرسوم المتحركة)
+
+![ZAD Mobile App Previews & Interfaces](./assets/docs/app_preview.svg)
+
+### 🎨 Key Mobile Screens & Motion Highlights:
+
+#### 1️⃣ Animated Splash Screen (`src/app/index.tsx`)
+- **Pulsing Golden Halo**: Reanimated 4 looping rotation and scale effects surrounding the ZAD brand emblem.
+- **Floating ZAD Logo**: Quadratic easing animation providing a dynamic, tactile feel.
+- **Staggered Entrance**: Delayed fade-in for taglines and the interactive continue button.
+
+#### 2️⃣ Home & Fast Food Feed (`src/app/(tabs)/home.tsx`)
+- **Dynamic Category Selector**: Filter food items instantly (Pizza, Shawarma, Burger, Grills, Sweets, Drinks).
+- **Promotional Banners**: Animated discount banners with gold accent highlights.
+- **Restaurant Cards**: Ratings, cuisine tags, distance indicators, and free delivery badges.
+
+#### 3️⃣ Real-Time Live Order Tracker (`src/app/(tabs)/orders.tsx`)
+- **Step-by-Step Status Bar**: Live visual tracking (`Order Received ➔ Preparing 👨‍🍳 ➔ Out for Delivery 🛵 ➔ Delivered 🎉`).
+- **Driver Hotline**: Direct tap-to-call delivery driver button (`📞 الاتصال بالسائق`).
+- **Interactive Re-Ordering**: One-tap re-order button to populate the cart with previous orders.
+
+#### 4️⃣ Profile & Interactive Bottom Modals (`src/app/(tabs)/profile.tsx`)
+- **Edit Profile Modal**: Modify name, email, phone, and avatar presets with instant store sync.
+- **Delivery Addresses Modal**: Manage multiple delivery locations, add new addresses, and set default defaults.
+- **Payment & Wallet Modal**: Select payment options (COD, Syriatel Cash, Card) and top up wallet (+10,000, +25,000, +50,000 SYP).
+- **Golden Rewards Modal**: Redeem 1,000 points for an instant 10,000 SYP wallet credit.
+- **Help Center & Contact Us Modals**: Expandable accordion FAQs, WhatsApp support, and customer hotline.
+
+---
+
+## 🌟 Feature Overview
 
 - 🍕 **Multi-Category Browsing**: Explore Pizza, Shawarma, Burgers, Broasted Chicken, Grills, Sweets, and Beverages.
 - 🛒 **Interactive Shopping Cart**: Dynamic item quantity updates, customized invoice breakdown, and estimated delivery fees.
@@ -25,6 +56,9 @@
 
 ```text
 zad/
+├── assets/                         # Documentation graphics & app SVG previews
+│   └── docs/app_preview.svg
+│
 ├── backend/                        # ASP.NET Core 10 Web API
 │   ├── YallaFood.Api/              # API Controllers, Middlewares, Program.cs
 │   ├── YallaFood.Application/      # CQRS Services, DTOs, Validators
