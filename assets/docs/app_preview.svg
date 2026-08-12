@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 700" width="100%" height="100%">
   <defs>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1b1b1c"/>
-      <stop offset="50%" stop-color="#2a0005"/>
-      <stop offset="100%" stop-color="#140003"/>
+      <stop offset="0%" stop-color="#0f0f10"/>
+      <stop offset="50%" stop-color="#1e0004"/>
+      <stop offset="100%" stop-color="#0d0002"/>
     </linearGradient>
     <linearGradient id="brandRed" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#a61e22"/>
@@ -14,173 +14,164 @@
       <stop offset="100%" stop-color="#D4AF37"/>
     </linearGradient>
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.5"/>
-    </filter>
-    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="8" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.6"/>
     </filter>
   </defs>
 
   <!-- Background -->
-  <rect width="1200" height="650" fill="url(#bgGrad)"/>
+  <rect width="1400" height="700" fill="url(#bgGrad)"/>
   
-  <!-- Subtle Header -->
-  <text x="600" y="50" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="bold" fill="#D4AF37" text-anchor="middle" letter-spacing="2">
-    ✨ ZAD FOOD DELIVERY — APP INTERFACES &amp; ANIMATIONS
+  <!-- Header Title -->
+  <text x="700" y="45" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="700" fill="#D4AF37" text-anchor="middle" letter-spacing="2">
+    ZAD MOBILE APPLICATION — FULL SCREEN SHOWCASE
   </text>
-  <text x="600" y="80" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#E2BEBB" text-anchor="middle" opacity="0.8">
-    React Native (Expo) • Reanimated 4 • Interactive Modals &amp; Live Tracking
+  <text x="700" y="70" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#E2BEBB" text-anchor="middle" opacity="0.75">
+    Built with React Native, Expo Router, Zustand, and ASP.NET Core 10
   </text>
 
-  <!-- SCREEN 1: SPLASH SCREEN & ANIMATIONS -->
-  <g transform="translate(60, 110)" filter="url(#shadow)">
-    <!-- Mobile Frame -->
-    <rect width="240" height="480" rx="32" fill="#83000f" stroke="#D4AF37" stroke-width="3"/>
-    <!-- Screen Notch/Bar -->
-    <rect x="80" y="12" width="80" height="16" rx="8" fill="#58000a"/>
-    
-    <!-- Animated Halo Circle -->
-    <circle cx="120" cy="210" r="64" fill="none" stroke="#D4AF37" stroke-width="2" stroke-dasharray="6,4"/>
-    <circle cx="120" cy="210" r="54" fill="#6a000c" stroke="#D4AF37" stroke-width="3"/>
-    <text x="120" y="218" font-family="sans-serif" font-size="32" font-weight="900" fill="#D4AF37" text-anchor="middle">ZAD</text>
-    
-    <text x="120" y="300" font-family="sans-serif" font-size="20" font-weight="bold" fill="#ffffff" text-anchor="middle">ZAD</text>
-    <text x="120" y="324" font-family="sans-serif" font-size="12" fill="#F4D35E" text-anchor="middle">دليلك لمطاعم السويداء</text>
-    
-    <!-- Animated Button -->
-    <rect x="40" y="380" width="160" height="40" rx="10" fill="url(#goldGrad)"/>
-    <text x="120" y="405" font-family="sans-serif" font-size="14" font-weight="bold" fill="#83000f" text-anchor="middle">متابعة ➔</text>
-    
-    <!-- Label -->
-    <rect x="30" y="445" width="180" height="24" rx="12" fill="rgba(0,0,0,0.6)"/>
-    <text x="120" y="461" font-family="sans-serif" font-size="11" font-weight="bold" fill="#D4AF37" text-anchor="middle">1. Animated Splash Screen</text>
+  <!-- 1. SPLASH SCREEN -->
+  <g transform="translate(40, 95)" filter="url(#shadow)">
+    <rect width="200" height="430" rx="28" fill="#83000f" stroke="#D4AF37" stroke-width="2.5"/>
+    <rect x="65" y="10" width="70" height="14" rx="7" fill="#58000a"/>
+    <circle cx="100" cy="180" r="50" fill="none" stroke="#D4AF37" stroke-width="2" stroke-dasharray="5,3"/>
+    <circle cx="100" cy="180" r="42" fill="#6a000c" stroke="#D4AF37" stroke-width="2.5"/>
+    <text x="100" y="187" font-family="sans-serif" font-size="24" font-weight="900" fill="#D4AF37" text-anchor="middle">ZAD</text>
+    <text x="100" y="260" font-family="sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">ZAD</text>
+    <text x="100" y="280" font-family="sans-serif" font-size="10" fill="#F4D35E" text-anchor="middle">Suwayda Food Guide</text>
+    <rect x="30" y="340" width="140" height="34" rx="8" fill="url(#goldGrad)"/>
+    <text x="100" y="362" font-family="sans-serif" font-size="12" font-weight="bold" fill="#83000f" text-anchor="middle">Continue ➔</text>
+    <rect x="15" y="450" width="170" height="24" rx="12" fill="rgba(0,0,0,0.6)"/>
+    <text x="100" y="466" font-family="sans-serif" font-size="10" font-weight="bold" fill="#D4AF37" text-anchor="middle">1. Splash &amp; Welcome</text>
   </g>
 
-  <!-- SCREEN 2: HOME FEED & CATEGORIES -->
-  <g transform="translate(340, 110)" filter="url(#shadow)">
-    <!-- Mobile Frame -->
-    <rect width="240" height="480" rx="32" fill="#FCF9F8" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
-    <rect x="80" y="12" width="80" height="16" rx="8" fill="#e0e0e0"/>
-    
-    <!-- Header -->
-    <text x="20" y="52" font-family="sans-serif" font-size="14" font-weight="bold" fill="#83000f">السويداء - العجيلات 📍</text>
-    
-    <!-- Search Bar -->
-    <rect x="16" y="64" width="208" height="32" rx="16" fill="#EAE7E7"/>
-    <text x="32" y="85" font-family="sans-serif" font-size="11" fill="#777">ابحث عن وجبة أو مطعم...</text>
-
-    <!-- Categories Row -->
-    <rect x="16" y="106" width="60" height="26" rx="13" fill="#83000f"/>
-    <text x="46" y="123" font-family="sans-serif" font-size="11" fill="#fff" text-anchor="middle">🍕 بيتزا</text>
-    <rect x="84" y="106" width="60" height="26" rx="13" fill="#EAE7E7"/>
-    <text x="114" y="123" font-family="sans-serif" font-size="11" fill="#444" text-anchor="middle">🌯 شاورما</text>
-    <rect x="152" y="106" width="60" height="26" rx="13" fill="#EAE7E7"/>
-    <text x="182" y="123" font-family="sans-serif" font-size="11" fill="#444" text-anchor="middle">🍔 برجر</text>
-
-    <!-- Promo Banner -->
-    <rect x="16" y="142" width="208" height="84" rx="12" fill="url(#brandRed)"/>
-    <text x="32" y="170" font-family="sans-serif" font-size="14" font-weight="bold" fill="#FED65B">خصم 20% على البيتزا</text>
-    <text x="32" y="190" font-family="sans-serif" font-size="10" fill="#ffffff">استخدم كود: ZAD2026</text>
-
-    <!-- Restaurant Cards -->
-    <rect x="16" y="236" width="208" height="80" rx="12" fill="#ffffff" stroke="#eee"/>
-    <text x="28" y="260" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1b1b1c">مطعم رويال بالاس</text>
-    <text x="28" y="278" font-family="sans-serif" font-size="10" fill="#666">مشويات • بيتزا • فطور ⭐️ 4.8</text>
-    <text x="28" y="296" font-family="sans-serif" font-size="10" font-weight="bold" fill="#83000f">توصيل مجاني • 25 دقيقة</text>
-
-    <rect x="16" y="324" width="208" height="80" rx="12" fill="#ffffff" stroke="#eee"/>
-    <text x="28" y="348" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1b1b1c">البيتزا الذهبية</text>
-    <text x="28" y="366" font-family="sans-serif" font-size="10" fill="#666">بيتزا إيطالية ⭐️ 4.7</text>
-
-    <!-- Label -->
-    <rect x="30" y="445" width="180" height="24" rx="12" fill="rgba(0,0,0,0.6)"/>
-    <text x="120" y="461" font-family="sans-serif" font-size="11" font-weight="bold" fill="#D4AF37" text-anchor="middle">2. Home &amp; Fast Food Feed</text>
+  <!-- 2. HOME FEED -->
+  <g transform="translate(260, 95)" filter="url(#shadow)">
+    <rect width="200" height="430" rx="28" fill="#FCF9F8" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+    <rect x="65" y="10" width="70" height="14" rx="7" fill="#e0e0e0"/>
+    <text x="15" y="42" font-family="sans-serif" font-size="11" font-weight="bold" fill="#83000f">Suwayda - Al-Ojeilat 📍</text>
+    <rect x="15" y="52" width="170" height="26" rx="13" fill="#EAE7E7"/>
+    <text x="28" y="69" font-family="sans-serif" font-size="9" fill="#777">Search meals or restaurants...</text>
+    <rect x="15" y="88" width="50" height="22" rx="11" fill="#83000f"/>
+    <text x="40" y="103" font-family="sans-serif" font-size="9" fill="#fff" text-anchor="middle">Pizza</text>
+    <rect x="70" y="88" width="55" height="22" rx="11" fill="#EAE7E7"/>
+    <text x="97" y="103" font-family="sans-serif" font-size="9" fill="#444" text-anchor="middle">Shawarma</text>
+    <rect x="130" y="88" width="55" height="22" rx="11" fill="#EAE7E7"/>
+    <text x="157" y="103" font-family="sans-serif" font-size="9" fill="#444" text-anchor="middle">Burger</text>
+    <rect x="15" y="120" width="170" height="75" rx="10" fill="url(#brandRed)"/>
+    <text x="28" y="145" font-family="sans-serif" font-size="12" font-weight="bold" fill="#FED65B">20% OFF Pizza Week</text>
+    <text x="28" y="162" font-family="sans-serif" font-size="9" fill="#ffffff">Code: ZAD2026</text>
+    <rect x="15" y="205" width="170" height="70" rx="10" fill="#ffffff" stroke="#eee"/>
+    <text x="25" y="226" font-family="sans-serif" font-size="10" font-weight="bold" fill="#1b1b1c">Royal Palace Restaurant</text>
+    <text x="25" y="242" font-family="sans-serif" font-size="8" fill="#666">Grills • Pizza ★ 4.8</text>
+    <text x="25" y="258" font-family="sans-serif" font-size="8" font-weight="bold" fill="#83000f">Free Delivery • 25 min</text>
+    <rect x="15" y="283" width="170" height="70" rx="10" fill="#ffffff" stroke="#eee"/>
+    <text x="25" y="304" font-family="sans-serif" font-size="10" font-weight="bold" fill="#1b1b1c">Golden Pizza House</text>
+    <text x="25" y="320" font-family="sans-serif" font-size="8" fill="#666">Italian Pizza ★ 4.7</text>
+    <rect x="15" y="450" width="170" height="24" rx="12" fill="rgba(0,0,0,0.6)"/>
+    <text x="100" y="466" font-family="sans-serif" font-size="10" font-weight="bold" fill="#D4AF37" text-anchor="middle">2. Home &amp; Discovery</text>
   </g>
 
-  <!-- SCREEN 3: LIVE ORDER TRACKING -->
-  <g transform="translate(620, 110)" filter="url(#shadow)">
-    <!-- Mobile Frame -->
-    <rect width="240" height="480" rx="32" fill="#FCF9F8" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
-    <rect x="80" y="12" width="80" height="16" rx="8" fill="#e0e0e0"/>
-
-    <text x="20" y="52" font-family="sans-serif" font-size="16" font-weight="bold" fill="#83000f">طلباتي النشطة 🛵</text>
-
-    <!-- Order Card -->
-    <rect x="16" y="64" width="208" height="340" rx="16" fill="#ffffff" stroke="#e2bebb"/>
-    
-    <text x="28" y="92" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1b1b1c">مطعم رويال بالاس</text>
-    <text x="28" y="108" font-family="sans-serif" font-size="10" fill="#888">طلب رقم #YF-8921</text>
-    
-    <!-- Status Badge -->
-    <rect x="136" y="78" width="76" height="22" rx="11" fill="rgba(131,0,15,0.1)"/>
-    <text x="174" y="93" font-family="sans-serif" font-size="9" font-weight="bold" fill="#83000f" text-anchor="middle">السائق في الطريق 🛵</text>
-
-    <!-- Progress Bar -->
-    <rect x="28" y="130" width="184" height="48" rx="8" fill="#f0eded"/>
-    <text x="36" y="148" font-family="sans-serif" font-size="10" font-weight="bold" fill="#83000f">الوقت المتوقع: 15-20 دقيقة</text>
-    <rect x="36" y="158" width="168" height="6" rx="3" fill="#ccc"/>
-    <rect x="36" y="158" width="120" height="6" rx="3" fill="#83000f"/>
-
-    <!-- Order items -->
-    <text x="28" y="200" font-family="sans-serif" font-size="11" fill="#333">1× وجبة بيتزا سوبر سوبريم</text>
-    <text x="28" y="218" font-family="sans-serif" font-size="11" fill="#333">2× عصير برتقال طازج 1L</text>
-    
-    <line x1="28" y1="234" x2="212" y2="234" stroke="#eee" stroke-width="1"/>
-    <text x="28" y="254" font-family="sans-serif" font-size="12" font-weight="bold" fill="#83000f">الإجمالي: 98,000 ل.س</text>
-
-    <!-- Buttons -->
-    <rect x="28" y="274" width="184" height="34" rx="8" fill="#83000f"/>
-    <text x="120" y="296" font-family="sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">📞 الاتصال بالسائق</text>
-
-    <rect x="28" y="316" width="184" height="34" rx="8" fill="#EAE7E7"/>
-    <text x="120" y="338" font-family="sans-serif" font-size="11" font-weight="bold" fill="#ba1a1a" text-anchor="middle">إلغاء الطلب</text>
-
-    <!-- Label -->
-    <rect x="30" y="445" width="180" height="24" rx="12" fill="rgba(0,0,0,0.6)"/>
-    <text x="120" y="461" font-family="sans-serif" font-size="11" font-weight="bold" fill="#D4AF37" text-anchor="middle">3. Real-Time Order Tracker</text>
+  <!-- 3. MENU & RESTAURANT PAGE -->
+  <g transform="translate(480, 95)" filter="url(#shadow)">
+    <rect width="200" height="430" rx="28" fill="#FCF9F8" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+    <rect x="65" y="10" width="70" height="14" rx="7" fill="#e0e0e0"/>
+    <rect x="0" y="0" width="200" height="100" rx="28" fill="url(#brandRed)"/>
+    <text x="15" y="50" font-family="sans-serif" font-size="13" font-weight="bold" fill="#ffffff">Royal Palace Menu</text>
+    <text x="15" y="66" font-family="sans-serif" font-size="9" fill="#F4D35E">★ 4.8 (142 reviews) • 25-35 min</text>
+    <rect x="15" y="112" width="170" height="70" rx="10" fill="#ffffff" stroke="#eee"/>
+    <text x="25" y="132" font-family="sans-serif" font-size="10" font-weight="bold" fill="#1b1b1c">Super Supreme Pizza</text>
+    <text x="25" y="146" font-family="sans-serif" font-size="8" fill="#777">Mozzarella, Pepperoni, Olives</text>
+    <text x="25" y="164" font-family="sans-serif" font-size="10" font-weight="bold" fill="#83000f">65,000 SYP</text>
+    <rect x="145" y="148" width="32" height="22" rx="6" fill="#83000f"/>
+    <text x="161" y="163" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">+</text>
+    <rect x="15" y="190" width="170" height="70" rx="10" fill="#ffffff" stroke="#eee"/>
+    <text x="25" y="210" font-family="sans-serif" font-size="10" font-weight="bold" fill="#1b1b1c">Classic Margherita</text>
+    <text x="25" y="224" font-family="sans-serif" font-size="8" fill="#777">Tomato sauce, Mozzarella, Basil</text>
+    <text x="25" y="242" font-family="sans-serif" font-size="10" font-weight="bold" fill="#83000f">50,000 SYP</text>
+    <rect x="145" y="226" width="32" height="22" rx="6" fill="#83000f"/>
+    <text x="161" y="241" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">+</text>
+    <rect x="15" y="450" width="170" height="24" rx="12" fill="rgba(0,0,0,0.6)"/>
+    <text x="100" y="466" font-family="sans-serif" font-size="10" font-weight="bold" fill="#D4AF37" text-anchor="middle">3. Restaurant &amp; Menu</text>
   </g>
 
-  <!-- SCREEN 4: PROFILE & INTERACTIVE MODALS -->
-  <g transform="translate(900, 110)" filter="url(#shadow)">
-    <!-- Mobile Frame -->
-    <rect width="240" height="480" rx="32" fill="#FCF9F8" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
-    <rect x="80" y="12" width="80" height="16" rx="8" fill="#e0e0e0"/>
+  <!-- 4. CART & CHECKOUT -->
+  <g transform="translate(700, 95)" filter="url(#shadow)">
+    <rect width="200" height="430" rx="28" fill="#FCF9F8" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+    <rect x="65" y="10" width="70" height="14" rx="7" fill="#e0e0e0"/>
+    <text x="15" y="42" font-family="sans-serif" font-size="14" font-weight="bold" fill="#83000f">Shopping Cart 🛒</text>
+    <rect x="15" y="54" width="170" height="50" rx="8" fill="#ffffff" stroke="#eee"/>
+    <text x="25" y="74" font-family="sans-serif" font-size="9" font-weight="bold" fill="#1b1b1c">1× Super Supreme Pizza</text>
+    <text x="25" y="90" font-family="sans-serif" font-size="9" font-weight="bold" fill="#83000f">65,000 SYP</text>
+    <rect x="15" y="112" width="170" height="50" rx="8" fill="#ffffff" stroke="#eee"/>
+    <text x="25" y="132" font-family="sans-serif" font-size="9" font-weight="bold" fill="#1b1b1c">2× Fresh Orange Juice 1L</text>
+    <text x="25" y="148" font-family="sans-serif" font-size="9" font-weight="bold" fill="#83000f">30,000 SYP</text>
+    <rect x="15" y="172" width="170" height="100" rx="8" fill="#ffffff" stroke="#e2bebb"/>
+    <text x="25" y="190" font-family="sans-serif" font-size="9" fill="#666">Subtotal: 95,000 SYP</text>
+    <text x="25" y="206" font-family="sans-serif" font-size="9" fill="#666">Delivery Fee: 3,000 SYP</text>
+    <line x1="25" y1="216" x2="175" y2="216" stroke="#eee" stroke-width="1"/>
+    <text x="25" y="234" font-family="sans-serif" font-size="11" font-weight="bold" fill="#83000f">Total: 98,000 SYP</text>
+    <text x="25" y="254" font-family="sans-serif" font-size="8" fill="#444">Payment: Cash on Delivery</text>
+    <rect x="15" y="285" width="170" height="34" rx="8" fill="#83000f"/>
+    <text x="100" y="307" font-family="sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">Confirm &amp; Place Order ➔</text>
+    <rect x="15" y="450" width="170" height="24" rx="12" fill="rgba(0,0,0,0.6)"/>
+    <text x="100" y="466" font-family="sans-serif" font-size="10" font-weight="bold" fill="#D4AF37" text-anchor="middle">4. Cart &amp; Checkout</text>
+  </g>
 
-    <!-- Profile Header Background -->
-    <rect x="0" y="0" width="240" height="130" fill="url(#brandRed)"/>
-    <circle cx="120" cy="56" r="32" fill="#ffffff" stroke="#D4AF37" stroke-width="2"/>
-    <text x="120" y="62" font-family="sans-serif" font-size="20" text-anchor="middle">👩‍🦰</text>
-    <text x="120" y="102" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">ميس العوام</text>
+  <!-- 5. REAL-TIME TRACKER -->
+  <g transform="translate(920, 95)" filter="url(#shadow)">
+    <rect width="200" height="430" rx="28" fill="#FCF9F8" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+    <rect x="65" y="10" width="70" height="14" rx="7" fill="#e0e0e0"/>
+    <text x="15" y="42" font-family="sans-serif" font-size="14" font-weight="bold" fill="#83000f">My Orders 🛵</text>
+    <rect x="15" y="54" width="170" height="260" rx="12" fill="#ffffff" stroke="#e2bebb"/>
+    <text x="25" y="78" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1b1b1c">Royal Palace</text>
+    <text x="25" y="92" font-family="sans-serif" font-size="8" fill="#888">Order #YF-8921</text>
+    <rect x="110" y="66" width="65" height="18" rx="9" fill="rgba(131,0,15,0.1)"/>
+    <text x="142" y="79" font-family="sans-serif" font-size="8" font-weight="bold" fill="#83000f" text-anchor="middle">On The Way 🛵</text>
+    <rect x="25" y="110" width="150" height="40" rx="6" fill="#f0eded"/>
+    <text x="33" y="126" font-family="sans-serif" font-size="8" font-weight="bold" fill="#83000f">Est. Arrival: 15-20 min</text>
+    <rect x="33" y="134" width="134" height="5" rx="2.5" fill="#ccc"/>
+    <rect x="33" y="134" width="100" height="5" rx="2.5" fill="#83000f"/>
+    <text x="25" y="170" font-family="sans-serif" font-size="8" fill="#333">1× Super Supreme Pizza</text>
+    <text x="25" y="184" font-family="sans-serif" font-size="8" fill="#333">2× Orange Juice 1L</text>
+    <text x="25" y="206" font-family="sans-serif" font-size="10" font-weight="bold" fill="#83000f">Total: 98,000 SYP</text>
+    <rect x="25" y="220" width="150" height="28" rx="6" fill="#83000f"/>
+    <text x="100" y="238" font-family="sans-serif" font-size="9" font-weight="bold" fill="#ffffff" text-anchor="middle">📞 Call Driver</text>
+    <rect x="25" y="254" width="150" height="28" rx="6" fill="#EAE7E7"/>
+    <text x="100" y="272" font-family="sans-serif" font-size="9" font-weight="bold" fill="#ba1a1a" text-anchor="middle">Cancel Order</text>
+    <rect x="15" y="450" width="170" height="24" rx="12" fill="rgba(0,0,0,0.6)"/>
+    <text x="100" y="466" font-family="sans-serif" font-size="10" font-weight="bold" fill="#D4AF37" text-anchor="middle">5. Live Order Tracker</text>
+  </g>
 
-    <!-- Stats Banner -->
-    <rect x="16" y="116" width="208" height="46" rx="10" fill="#ffffff" stroke="#eee"/>
-    <text x="48" y="136" font-family="sans-serif" font-size="11" font-weight="bold" fill="#83000f" text-anchor="middle">1,250</text>
-    <text x="48" y="150" font-family="sans-serif" font-size="9" fill="#777" text-anchor="middle">نقطة</text>
+  <!-- 6. PROFILE & MODALS -->
+  <g transform="translate(1140, 95)" filter="url(#shadow)">
+    <rect width="200" height="430" rx="28" fill="#FCF9F8" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+    <rect x="65" y="10" width="70" height="14" rx="7" fill="#e0e0e0"/>
+    <rect x="0" y="0" width="200" height="90" fill="url(#brandRed)"/>
+    <circle cx="100" cy="40" r="22" fill="#ffffff" stroke="#D4AF37" stroke-width="2"/>
+    <text x="100" y="46" font-family="sans-serif" font-size="14" text-anchor="middle">👩‍🦰</text>
+    <text x="100" y="76" font-family="sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">Mais Alawam</text>
+    <rect x="15" y="100" width="170" height="36" rx="8" fill="#ffffff" stroke="#eee"/>
+    <text x="40" y="116" font-family="sans-serif" font-size="9" font-weight="bold" fill="#83000f" text-anchor="middle">1,250</text>
+    <text x="40" y="128" font-family="sans-serif" font-size="7" fill="#777" text-anchor="middle">Points</text>
+    <text x="100" y="116" font-family="sans-serif" font-size="9" font-weight="bold" fill="#83000f" text-anchor="middle">12</text>
+    <text x="100" y="128" font-family="sans-serif" font-size="7" fill="#777" text-anchor="middle">Orders</text>
+    <text x="160" y="116" font-family="sans-serif" font-size="9" font-weight="bold" fill="#83000f" text-anchor="middle">45,000</text>
+    <text x="160" y="128" font-family="sans-serif" font-size="7" fill="#777" text-anchor="middle">Balance</text>
 
-    <text x="120" y="136" font-family="sans-serif" font-size="11" font-weight="bold" fill="#83000f" text-anchor="middle">12</text>
-    <text x="120" y="150" font-family="sans-serif" font-size="9" fill="#777" text-anchor="middle">طلب ناجح</text>
+    <!-- Modal Mock -->
+    <rect x="0" y="150" width="200" height="230" rx="16" fill="rgba(0,0,0,0.4)"/>
+    <rect x="0" y="190" width="200" height="190" rx="16" fill="#ffffff"/>
+    <text x="15" y="215" font-family="sans-serif" font-size="10" font-weight="bold" fill="#1b1b1c">Edit Profile ✨</text>
+    <rect x="15" y="225" width="170" height="22" rx="4" fill="#F0EDED"/>
+    <text x="22" y="240" font-family="sans-serif" font-size="8" fill="#444">Name: Mais Alawam</text>
+    <rect x="15" y="253" width="170" height="22" rx="4" fill="#F0EDED"/>
+    <text x="22" y="268" font-family="sans-serif" font-size="8" fill="#444">Email: com@gmail.alawammais</text>
+    <rect x="15" y="281" width="170" height="22" rx="4" fill="#F0EDED"/>
+    <text x="22" y="296" font-family="sans-serif" font-size="8" fill="#444">Phone: +963 911 111 111</text>
+    <rect x="15" y="315" width="170" height="26" rx="6" fill="#83000f"/>
+    <text x="100" y="332" font-family="sans-serif" font-size="9" font-weight="bold" fill="#ffffff" text-anchor="middle">Save Changes</text>
 
-    <text x="192" y="136" font-family="sans-serif" font-size="11" font-weight="bold" fill="#83000f" text-anchor="middle">45,000</text>
-    <text x="192" y="150" font-family="sans-serif" font-size="9" fill="#777" text-anchor="middle">الرصيد</text>
-
-    <!-- Modal Drawer Overlay Mockup -->
-    <rect x="0" y="180" width="240" height="300" rx="20" fill="rgba(0,0,0,0.5)"/>
-    <rect x="0" y="230" width="240" height="250" rx="20" fill="#ffffff"/>
-    
-    <text x="20" y="260" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1b1b1c">تعديل الملف الشخصي ✨</text>
-    
-    <rect x="16" y="274" width="208" height="28" rx="6" fill="#F0EDED"/>
-    <text x="24" y="292" font-family="sans-serif" font-size="10" fill="#444">الاسم: ميس العوام</text>
-
-    <rect x="16" y="310" width="208" height="28" rx="6" fill="#F0EDED"/>
-    <text x="24" y="328" font-family="sans-serif" font-size="10" fill="#444">الهاتف: 111 111 911 963+</text>
-
-    <rect x="16" y="350" width="208" height="32" rx="8" fill="#83000f"/>
-    <text x="120" y="371" font-family="sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">حفظ التغييرات</text>
-
-    <!-- Label -->
-    <rect x="30" y="445" width="180" height="24" rx="12" fill="rgba(0,0,0,0.6)"/>
-    <text x="120" y="461" font-family="sans-serif" font-size="11" font-weight="bold" fill="#D4AF37" text-anchor="middle">4. Profile &amp; Modals</text>
+    <rect x="15" y="450" width="170" height="24" rx="12" fill="rgba(0,0,0,0.6)"/>
+    <text x="100" y="466" font-family="sans-serif" font-size="10" font-weight="bold" fill="#D4AF37" text-anchor="middle">6. Account &amp; Modals</text>
   </g>
 </svg>
