@@ -1,0 +1,370 @@
+import { ComponentProps } from 'react';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
+
+type IconName = ComponentProps<typeof MaterialCommunityIcons>['name'];
+
+export interface FastFoodCategory {
+  id: string;
+  name: string;
+  iconName: IconName;
+  color: 'primary' | 'gold';
+  description: string;
+}
+
+export interface FastFoodProduct {
+  id: string;
+  name: string;
+  description: string;
+  price: number;
+  imageUrl: string;
+  categoryId: string;
+  categoryName: string;
+  restaurantId: string;
+  restaurantName: string;
+  restaurantRating: number;
+  deliveryTime: string;
+}
+
+export const fastFoodCategories: FastFoodCategory[] = [
+  { id: 'pizza', name: 'بيتزا', iconName: 'pizza', color: 'primary', description: 'بيتزا إيطالية وأمريكية بشتى النكهات والجبن الفاخر' },
+  { id: 'burger', name: 'برجر', iconName: 'hamburger', color: 'gold', description: 'برجر لحم ودجاج طازج ومشوي على الفحم' },
+  { id: 'shawarma', name: 'شاورما', iconName: 'taco', color: 'primary', description: 'شاورما دجاج ولحم على الخلطة الشامية الأصيلة' },
+  { id: 'broasted', name: 'بروستد', iconName: 'food-drumstick', color: 'gold', description: 'قطع دجاج مقرمشة ووجبات بروستد عائلية' },
+  { id: 'sandwich', name: 'سندويشات', iconName: 'bread-slice', color: 'primary', description: 'سندويشات زنجر، فاهيتا، فرانسيسكو وصويا' },
+  { id: 'appetizers', name: 'مقبلات', iconName: 'french-fries', color: 'gold', description: 'بطاطا مقلية، أصابع موزاريلا وحلقات بصل' },
+  { id: 'desserts', name: 'حلويات وكريب', iconName: 'ice-cream', color: 'primary', description: 'كريب نوتيلا، وافل، آيس كريم وشوكولا' },
+  { id: 'drinks', name: 'مشروبات', iconName: 'cup-water', color: 'gold', description: 'عصائر طبيعية طازجة كوكتيل ومشروبات غازية' },
+  { id: 'salads', name: 'سلطات', iconName: 'leaf', color: 'primary', description: 'سلطة سيزر، كولسلو وسلطات صحية طازجة' },
+];
+
+export const fastFoodProducts: FastFoodProduct[] = [
+  // --- 1. بيتزا (Pizza) ---
+  {
+    id: 'pz-1',
+    name: 'بيتزا سوبر سوبريم عائلية',
+    description: 'صلصة طماطم فاخرة، جبنة موزاريلا إيطالية، ببروني، بصل، فلفل أخضر، وزيتون أسود',
+    price: 65000,
+    imageUrl: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1000&q=85',
+    categoryId: 'pizza',
+    categoryName: 'بيتزا',
+    restaurantId: '1',
+    restaurantName: 'مطعم البيتزا الذهبية',
+    restaurantRating: 4.8,
+    deliveryTime: '25-35 دقيقة',
+  },
+  {
+    id: 'pz-2',
+    name: 'بيتزا مارجريتا كلاسيك',
+    description: 'صلصة طماطم طازجة، جبنة موزاريلا غنية، أوراق ريحان وزيت زيتون بكر ممتاز',
+    price: 45000,
+    imageUrl: 'https://images.unsplash.com/photo-1604382355076-af4b0eb60143?auto=format&fit=crop&w=1000&q=85',
+    categoryId: 'pizza',
+    categoryName: 'بيتزا',
+    restaurantId: '1',
+    restaurantName: 'مطعم البيتزا الذهبية',
+    restaurantRating: 4.8,
+    deliveryTime: '20-30 دقيقة',
+  },
+  {
+    id: 'pz-3',
+    name: 'بيتزا دجاج باربيكيو مدخنة',
+    description: 'قطع دجاج مشوي متبل، صلصة باربيكيو مدخنة، بصل أحمر وجبنة موزاريلا دايبة',
+    price: 58000,
+    imageUrl: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1000&q=85',
+    categoryId: 'pizza',
+    categoryName: 'بيتزا',
+    restaurantId: '2',
+    restaurantName: 'House Food',
+    restaurantRating: 4.6,
+    deliveryTime: '30-40 دقيقة',
+  },
+  {
+    id: 'pz-4',
+    name: 'بيتزا بيبروني إيطالية حارة',
+    description: 'شرائح ببروني بقر، جبنة موزاريلا ذائبة وشطة حارة مع صلصة الطماطم الخاصة',
+    price: 52000,
+    imageUrl: 'https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=1000&q=85',
+    categoryId: 'pizza',
+    categoryName: 'بيتزا',
+    restaurantId: '3',
+    restaurantName: 'مطعم رويال بالاس',
+    restaurantRating: 4.9,
+    deliveryTime: '25-35 دقيقة',
+  },
+  {
+    id: 'pz-5',
+    name: 'بيتزا فور تشيز (أربعة أجبان)',
+    description: 'مزيج فاخر من الموزاريلا، الشيدر، الرقوفر، والبارميزان مع رشة أوريجانو',
+    price: 60000,
+    imageUrl: 'https://images.unsplash.com/photo-1573821663912-569905455b1c?auto=format&fit=crop&w=1000&q=85',
+    categoryId: 'pizza',
+    categoryName: 'بيتزا',
+    restaurantId: '1',
+    restaurantName: 'مطعم البيتزا الذهبية',
+    restaurantRating: 4.8,
+    deliveryTime: '20-30 دقيقة',
+  },
+
+  // --- 2. برجر (Burger) ---
+  {
+    id: 'bg-1',
+    name: 'برجر تشيدر دبل بيق ماك',
+    description: 'شريحتان لحم بلدي طازج، صوص الشيدر الذائب، خس، مخلل وبصل محمص في خبز البريوش',
+    price: 42000,
+    imageUrl: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=85',
+    categoryId: 'burger',
+    categoryName: 'برجر',
+    restaurantId: '2',
+    restaurantName: 'House Food',
+    restaurantRating: 4.6,
+    deliveryTime: '25-35 دقيقة',
+  },
+  {
+    id: 'bg-2',
+    name: 'برجر كرسبي تشيكن زلاطة',
+    description: 'صدر دجاج مقرمش سبايسي، صوص المايونيز بالثوم، سلطة ملفوف وشرائح الجبن',
+    price: 38000,
+    imageUrl: 'https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?auto=format&fit=crop&w=1000&q=85',
+    categoryId: 'burger',
+    categoryName: 'برجر',
+    restaurantId: '2',
+    restaurantName: 'House Food',
+    restaurantRating: 4.6,
+    deliveryTime: '25-35 دقيقة',
+  },
+  {
+    id: 'bg-3',
+    name: 'برجر عالي اللذة بالبيكون والبيض',
+    description: 'لحم مشوي على الفحم، بيكون بقر مقرمش، بيض عيون، وصوص المشروم الخاص',
+    price: 48000,
+    imageUrl: 'https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=1000&q=85',
+    categoryId: 'burger',
+    categoryName: 'برجر',
+    restaurantId: '3',
+    restaurantName: 'مطعم رويال بالاس',
+    restaurantRating: 4.9,
+    deliveryTime: '30-40 دقيقة',
+  },
+  {
+    id: 'bg-4',
+    name: 'سلايدرز برجر ميني 3 قطع',
+    description: '3 قطع برجر متنوعة (كلاسيك، باربيكيو، وسبايسي) مع بطاطا وودجز وصوص جانبي',
+    price: 40000,
+    imageUrl: 'https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1000&q=85',
+    categoryId: 'burger',
+    categoryName: 'برجر',
+    restaurantId: '2',
+    restaurantName: 'House Food',
+    restaurantRating: 4.6,
+    deliveryTime: '25-35 دقيقة',
+  },
+
+  // --- 3. شاورما (Shawarma) ---
+  {
+    id: 'sh-1',
+    name: 'طبق شاورما عربي دبل ملكي',
+    description: 'شاورما دجاج متبلة بالخلطة الشامية، مخلل، ثومية، بطاطا مقرمشة وخبز صاج محمص',
+    price: 38000,
+    imageUrl: 'https://images.unsplash.com/photo-1561651823-34feb02250e4?auto=format&fit=crop&w=1000&q=85',
+    categoryId: 'shawarma',
+    categoryName: 'شاورما',
+    restaurantId: '4',
+    restaurantName: 'مطعم الشام الذهبي',
+    restaurantRating: 4.7,
+    deliveryTime: '20-30 دقيقة',
+  },
+  {
+    id: 'sh-2',
+    name: 'سندويش شاورما دجاج سوبر',
+    description: 'خبز صاج محمص، ثومية كريمية، مخلل ودجاج محمص طازج من السخين',
+    price: 18000,
+    imageUrl: 'https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=1000&q=85',
+    categoryId: 'shawarma',
+    categoryName: 'شاورما',
+    restaurantId: '4',
+    restaurantName: 'مطعم الشام الذهبي',
+    restaurantRating: 4.7,
+    deliveryTime: '15-25 دقيقة',
+  },
+  {
+    id: 'sh-3',
+    name: 'شاورما فرنسي بالجبن والقشقوان',
+    description: 'خبز فرنسي محمص غرقان جبنة قشقوان وثومية وشاورما لحم أو دجاج',
+    price: 24000,
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=1000&q=85',
+    categoryId: 'shawarma',
+    categoryName: 'شاورما',
+    restaurantId: '3',
+    restaurantName: 'مطعم رويال بالاس',
+    restaurantRating: 4.9,
+    deliveryTime: '25-35 دقيقة',
+  },
+
+  // --- 4. بروستد (Broasted) ---
+  {
+    id: 'br-1',
+    name: 'وجبة بروستد 4 قطع مقرمشة',
+    description: '4 قطع دجاج طازجة مقرمشة، بطاطا مقلية، ثومية، مخلل، خبز صاج وكولسلو',
+    price: 45000,
+    imageUrl: 'https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=1000&q=85',
+    categoryId: 'broasted',
+    categoryName: 'بروستد',
+    restaurantId: '3',
+    restaurantName: 'مطعم رويال بالاس',
+    restaurantRating: 4.9,
+    deliveryTime: '30-40 دقيقة',
+  },
+  {
+    id: 'br-2',
+    name: 'وجبة سكالوب دجاج عائلية',
+    description: 'شرائح سكالوب دجاج متبلة ومقرمشة مع بطاطا حجم عائلي وصوصات متنوعة',
+    price: 55000,
+    imageUrl: 'https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=1000&q=85',
+    categoryId: 'broasted',
+    categoryName: 'بروستد',
+    restaurantId: '2',
+    restaurantName: 'House Food',
+    restaurantRating: 4.6,
+    deliveryTime: '25-35 دقيقة',
+  },
+
+  // --- 5. سندويشات (Sandwiches) ---
+  {
+    id: 'sw-1',
+    name: 'سندويش زنجر سبايسي ملكي',
+    description: 'صدر دجاج مقرمش حار، جبنة شيدر، خس، طماطم، صوص الزنجر وخبز سمسم محمص',
+    price: 22000,
+    imageUrl: 'https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=1000&q=85',
+    categoryId: 'sandwich',
+    categoryName: 'سندويشات',
+    restaurantId: '2',
+    restaurantName: 'House Food',
+    restaurantRating: 4.6,
+    deliveryTime: '20-30 دقيقة',
+  },
+  {
+    id: 'sw-2',
+    name: 'سندويش فاهيتا دجاج بالخضار',
+    description: 'قطع دجاج متبلة بالبهارات المكسيكية، فلفل ألوان، بصل، وفطر غرقان موزاريلا',
+    price: 24000,
+    imageUrl: 'https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=1000&q=85',
+    categoryId: 'sandwich',
+    categoryName: 'سندويشات',
+    restaurantId: '3',
+    restaurantName: 'مطعم رويال بالاس',
+    restaurantRating: 4.9,
+    deliveryTime: '25-35 دقيقة',
+  },
+  {
+    id: 'sw-3',
+    name: 'سندويش فرانسيسكو دجاج وخردل',
+    description: 'دجاج ذائب مع الذرة المكسيكية، الجبن المقرمش، المايونيز وصوص الخردل المميز',
+    price: 23000,
+    imageUrl: 'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=1000&q=85',
+    categoryId: 'sandwich',
+    categoryName: 'سندويشات',
+    restaurantId: '4',
+    restaurantName: 'مطعم الشام الذهبي',
+    restaurantRating: 4.7,
+    deliveryTime: '20-30 دقيقة',
+  },
+
+  // --- 6. مقبلات (Appetizers) ---
+  {
+    id: 'ap-1',
+    name: 'صحن بطاطا ودجز بالجبن والتوابل',
+    description: 'بطاطا ودجز مقرمشة بالأعشاب الإيطالية مغطاة بصوص الشيدر والباربيكيو',
+    price: 18000,
+    imageUrl: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=1000&q=85',
+    categoryId: 'appetizers',
+    categoryName: 'مقبلات',
+    restaurantId: '2',
+    restaurantName: 'House Food',
+    restaurantRating: 4.6,
+    deliveryTime: '15-25 دقيقة',
+  },
+  {
+    id: 'ap-2',
+    name: 'أصابع موزاريلا مقرمشة 6 قطع',
+    description: 'أصابع جبنة موزاريلا مقرمشة ذهبية مع صوص المارينارا الإيطالي للغمز',
+    price: 20000,
+    imageUrl: 'https://images.unsplash.com/photo-1531749668029-2db88e4276c7?auto=format&fit=crop&w=1000&q=85',
+    categoryId: 'appetizers',
+    categoryName: 'مقبلات',
+    restaurantId: '1',
+    restaurantName: 'مطعم البيتزا الذهبية',
+    restaurantRating: 4.8,
+    deliveryTime: '20-30 دقيقة',
+  },
+
+  // --- 7. حلويات وكريب (Desserts & Crepes) ---
+  {
+    id: 'ds-1',
+    name: 'كريب نوتيلا بالموز والمكسرات',
+    description: 'عجينة كريب طازجة محشوة شوكولا نوتيلا الأصلية، موز طازج وفستق حلبي',
+    price: 22000,
+    imageUrl: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=1000&q=85',
+    categoryId: 'desserts',
+    categoryName: 'حلويات وكريب',
+    restaurantId: '3',
+    restaurantName: 'مطعم رويال بالاس',
+    restaurantRating: 4.9,
+    deliveryTime: '20-30 دقيقة',
+  },
+  {
+    id: 'ds-2',
+    name: 'وافل بلجيكي بالشوكولاتة والآيس كريم',
+    description: 'قطع وافل ذهبية مقرمشة مع صوص شوكولاتة كيندر وكرة آيس كريم فانيليا',
+    price: 25000,
+    imageUrl: 'https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=1000&q=85',
+    categoryId: 'desserts',
+    categoryName: 'حلويات وكريب',
+    restaurantId: '2',
+    restaurantName: 'House Food',
+    restaurantRating: 4.6,
+    deliveryTime: '25-35 دقيقة',
+  },
+
+  // --- 8. مشروبات (Drinks) ---
+  {
+    id: 'dr-1',
+    name: 'عصير برتقال طبيعي طازج 1L',
+    description: 'عصير برتقال معصور طازجاً عند الطلب 100% بدون أي إضافات أو سكر',
+    price: 15000,
+    imageUrl: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=1000&q=85',
+    categoryId: 'drinks',
+    categoryName: 'مشروبات',
+    restaurantId: '3',
+    restaurantName: 'مطعم رويال بالاس',
+    restaurantRating: 4.9,
+    deliveryTime: '15-25 دقيقة',
+  },
+  {
+    id: 'dr-2',
+    name: 'كوكتيل طبقات رويال بالفواكه',
+    description: 'مانجو، فرولة، موز بالحليب، قطع فواكه طازجة ومزين بالقشطة والعسل',
+    price: 18000,
+    imageUrl: 'https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=1000&q=85',
+    categoryId: 'drinks',
+    categoryName: 'مشروبات',
+    restaurantId: '3',
+    restaurantName: 'مطعم رويال بالاس',
+    restaurantRating: 4.9,
+    deliveryTime: '20-30 دقيقة',
+  },
+
+  // --- 9. سلطات (Salads) ---
+  {
+    id: 'sl-1',
+    name: 'سلطة سيزر بالدجاج المشوي',
+    description: 'خس روماني طازج، شرائح دجاج مشوي، جبنة بارميزان، مكعبات خبز محمص ودريسنج سيزر',
+    price: 24000,
+    imageUrl: 'https://images.unsplash.com/photo-1550304943-4f24f54ddde9?auto=format&fit=crop&w=1000&q=85',
+    categoryId: 'salads',
+    categoryName: 'سلطات',
+    restaurantId: '1',
+    restaurantName: 'مطعم البيتزا الذهبية',
+    restaurantRating: 4.8,
+    deliveryTime: '20-30 دقيقة',
+  },
+];

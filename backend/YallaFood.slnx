@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="YallaFood.Api/YallaFood.Api.csproj" />
+  <Project Path="YallaFood.Application/YallaFood.Application.csproj" />
+  <Project Path="YallaFood.Domain/YallaFood.Domain.csproj" />
+  <Project Path="YallaFood.Infrastructure/YallaFood.Infrastructure.csproj" />
+  <Project Path="YallaFood.Tests/YallaFood.Tests.csproj" />
+</Solution>

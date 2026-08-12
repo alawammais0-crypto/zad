@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Expo & Mobile Build artifacts
+.expo/
+dist/
+web-build/
+*.apk
+*.aab
+*.ipa
+
+# .NET Build artifacts & IDE
+bin/
+obj/
+.vs/
+.vscode/
+*.user
+*.suo
+*.userossc
+[Dd]ebug/
+[Rr]elease/
+*.log
+
+# Environment & Credentials
+.env
+.env.local
+.env.*.local
+*.pem
+
+# Operating System
+.DS_Store
+Thumbs.db

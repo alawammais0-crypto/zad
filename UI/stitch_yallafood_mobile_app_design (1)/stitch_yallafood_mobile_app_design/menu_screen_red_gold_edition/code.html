@@ -1,0 +1,319 @@
+<!DOCTYPE html><html dir="rtl" lang="ar" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>تفاصيل المطعم - السويداء</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#e5e2e1",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed-variant": "#900a15",
+                    "surface-container-low": "#f6f3f2",
+                    "on-error": "#ffffff",
+                    "surface-container": "#f0eded",
+                    "outline-variant": "#e2bebb",
+                    "inverse-on-surface": "#f3f0ef",
+                    "on-error-container": "#93000a",
+                    "secondary": "#735c00",
+                    "outline": "#8e706d",
+                    "on-tertiary": "#ffffff",
+                    "primary": "#83000f",
+                    "on-secondary-container": "#745c00",
+                    "on-surface-variant": "#5a413e",
+                    "on-tertiary-container": "#ffb9b3",
+                    "secondary-container": "#fed65b",
+                    "surface-container-high": "#eae7e7",
+                    "on-background": "#1b1b1c",
+                    "surface": "#fcf9f8",
+                    "tertiary-fixed": "#ffdad7",
+                    "on-tertiary-fixed-variant": "#881e1e",
+                    "surface-tint": "#b3282a",
+                    "primary-fixed-dim": "#ffb3ad",
+                    "inverse-primary": "#ffb3ad",
+                    "secondary-fixed": "#ffe088",
+                    "tertiary-fixed-dim": "#ffb3ad",
+                    "primary-container": "#a61e22",
+                    "background": "#fcf9f8",
+                    "surface-container-highest": "#e5e2e1",
+                    "tertiary": "#7c1417",
+                    "primary-fixed": "#ffdad7",
+                    "error": "#ba1a1a",
+                    "surface-bright": "#fcf9f8",
+                    "inverse-surface": "#303030",
+                    "error-container": "#ffdad6",
+                    "surface-dim": "#dcd9d9",
+                    "on-secondary-fixed-variant": "#574500",
+                    "on-primary": "#ffffff",
+                    "on-surface": "#1b1b1c",
+                    "secondary-fixed-dim": "#e9c349",
+                    "on-tertiary-fixed": "#410004",
+                    "tertiary-container": "#9c2d2b",
+                    "on-primary-fixed": "#410004",
+                    "on-secondary-fixed": "#241a00",
+                    "on-primary-container": "#ffb9b4"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "sm": "12px",
+                    "xl": "32px",
+                    "gutter": "16px",
+                    "lg": "24px",
+                    "base": "8px",
+                    "container-margin": "20px",
+                    "md": "16px",
+                    "xs": "4px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Cairo"],
+                    "title-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-lg": ["Cairo"],
+                    "label-sm": ["Inter"],
+                    "display-lg": ["Cairo"],
+                    "headline-md": ["Cairo"],
+                    "label-md": ["Inter"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                    "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', 'Cairo', sans-serif;
+            background-color: #fcf9f8;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .active-tab::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background-color: #83000f;
+            border-radius: 9999px;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="text-on-background selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Top Navigation Placeholder (Fixed context) -->
+<header class="fixed top-0 left-0 w-full z-50 bg-transparent transition-all duration-300" id="top-nav">
+<div class="flex justify-between items-center w-full px-container-margin py-base h-16">
+<button class="w-10 h-10 flex items-center justify-center bg-white/80 backdrop-blur-md rounded-full shadow-sm text-primary hover:scale-95 duration-100">
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<div class="flex gap-2">
+<button class="w-10 h-10 flex items-center justify-center bg-white/80 backdrop-blur-md rounded-full shadow-sm text-primary hover:scale-95 duration-100">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center bg-white/80 backdrop-blur-md rounded-full shadow-sm text-primary hover:scale-95 duration-100">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</button>
+</div>
+</div>
+</header>
+<main class="pb-32">
+<!-- Hero Section: Large Food Cover -->
+<section class="relative h-72 md:h-96 w-full">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A high-end, professionally lit close-up of a traditional Middle Eastern feast featuring grilled meats and vibrant side dishes. The food is arranged on a dark, elegant surface with soft, golden atmospheric lighting creating a luxurious and appetizing mood. The color palette emphasizes deep crimson and warm gold tones, maintaining a majestic hospitality theme consistent with a premium food delivery brand." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCddbZJ4eWohWokGtLHlO_Kgp0j7vFS_WaaduDXUboM_UkbLUpR5aVGqfp3lyXffjDfqu77mhr2ZfK3c0VwvilvzeYAoSptJJyu6Bj0RJkD3_iPzREWTE1Dc9NPljiR15HRMhNUuGrbPLplUSTdwJOjWdEviYkhhOBehOkL3utEZVkV9ehvd9aR7A95qfbZhaWb13UL1hMiTMiy1EW54HgIaQIxZTbL1FTrzWv7GSUbiwkcTNJOl7g03yVj3L3_Xo6SKPHxBoq6FLTR4w&quot;);">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+</section>
+<!-- Restaurant Information Section -->
+<section class="relative -mt-8 px-container-margin">
+<div class="bg-surface-container-lowest rounded-xl shadow-lg p-lg border border-outline-variant/20">
+<div class="flex justify-between items-start mb-base">
+<div>
+<h1 class="font-headline-md text-headline-md text-primary mb-xs">JAPENGO</h1>
+<p class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]" data-icon="restaurant">restaurant</span>
+                            مأكولات شرقية • وجبات سريعة
+                        </p>
+</div>
+<div class="bg-secondary-container px-sm py-xs rounded-lg flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="star" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="font-label-md text-label-md text-on-secondary-container font-bold">4.8</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-md border-t border-surface-variant pt-md mt-md">
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-primary mb-1" data-icon="timer">timer</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">25-35 دقيقة</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-primary mb-1" data-icon="delivery_dining">delivery_dining</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3,000 ل.س</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-primary mb-1" data-icon="distance">distance</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1.2 كم</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Category Tabs -->
+<nav class="sticky top-16 z-40 bg-surface/95 backdrop-blur-md mt-lg border-b border-surface-variant overflow-x-auto hide-scrollbar">
+<div class="flex px-container-margin py-base gap-lg whitespace-nowrap min-w-max">
+<a class="relative font-label-md text-label-md text-primary font-bold active-tab px-xs py-base" href="#">الأكثر مبيعاً</a>
+<a class="font-label-md text-label-md text-on-surface-variant px-xs py-base hover:text-primary transition-colors" href="#">وجبات</a>
+<a class="font-label-md text-label-md text-on-surface-variant px-xs py-base hover:text-primary transition-colors" href="#">سندويش</a>
+<a class="font-label-md text-label-md text-on-surface-variant px-xs py-base hover:text-primary transition-colors" href="#">مقبلات</a>
+<a class="font-label-md text-label-md text-on-surface-variant px-xs py-base hover:text-primary transition-colors" href="#">مشروبات</a>
+<a class="font-label-md text-label-md text-on-surface-variant px-xs py-base hover:text-primary transition-colors" href="#">عروض عائلية</a>
+</div>
+</nav>
+<!-- Menu Items Section -->
+<section class="px-container-margin mt-lg space-y-lg">
+<h2 class="font-headline-md text-headline-md text-primary">الأكثر مبيعاً</h2>
+<!-- Bento Grid inspired layout for menu items -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Item Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex border border-outline-variant/10 hover:shadow-md transition-shadow">
+<div class="p-md flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-xs">وجبة عربي ملكي</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">شاورما دجاج، بطاطا مقلية، كريم ثوم، مخلل، خبز محمص.</p>
+</div>
+<div class="flex items-center justify-between mt-md">
+<span class="font-title-lg text-title-lg text-primary">18,500 ل.س</span>
+<button class="bg-primary-container text-on-primary-container w-10 h-10 rounded-lg flex items-center justify-center hover:scale-105 active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+<div class="w-32 h-32 md:w-40 md:h-40 bg-cover bg-center shrink-0" data-alt="A close-up shot of a premium Arabic shawarma meal. Golden crispy chicken pieces are sliced perfectly, accompanied by a small bowl of creamy garlic sauce and golden potato fries. The background is a minimalist light wood surface with warm sunlight, creating a high-end editorial food photography style." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCJ-9XhdbwEDkt-eK2MXesSdpH5gn0FZRtg6IdxJd0v12Yl6h4YApHoEbfjSTcOvOfnUhidOx1cn51v40PsDtwxkyu0ZmxecNie3Uv-bKnD9b44cGAx-SALOwBn0Qm3lzeTSoVNlMDLO2srmGdk-d2_PGUmXGgDaDDyvtz2iODcnF5RrA9s3ESm3bUwC_F5QHldKWVsFQiQcDgn3r7Te9dKZk3juWwAkxTRSRW_YHTEFptU1p0hFB8-nX9Y39miKlLCly3YOQsJq2g&quot;);">
+</div>
+</div>
+<!-- Item Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex border border-outline-variant/10 hover:shadow-md transition-shadow">
+<div class="p-md flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-xs">سندويش سوبر حار</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">خبز صاج، شاورما، صوص حار ملكي، فلفل هالبينو.</p>
+</div>
+<div class="flex items-center justify-between mt-md">
+<span class="font-title-lg text-title-lg text-primary">12,000 ل.س</span>
+<button class="bg-primary-container text-on-primary-container w-10 h-10 rounded-lg flex items-center justify-center hover:scale-105 active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+<div class="w-32 h-32 md:w-40 md:h-40 bg-cover bg-center shrink-0" data-alt="A spicy shawarma wrap sliced in half, showing succulent chicken and vibrant red chili sauce. The wrap is toasted to a perfect golden brown. Shot from a side angle with a shallow depth of field, set against a dark textured background that highlights the deep red tones of the sauce." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBAIFfgQIbYlC4aJ3CMsBkW1v6i0dasqGYadA4Pf9YrBFGw94Yb-0eOVAwhSRQrGwSfd2iHTkPWpGlqPjkJLfPRkX9XcZN0xKHdqImhjFEKDBdrD0TlxENTK61SK_fnWoCqxZr2RNvWJ9Q7JMCH_HHqQYiF_7TCTxrL8YLchfJIyixL5WM1arMfXrxVmyiJPqZPGr0igiE_rIYkkeCKrqsrz-WGFcqkksd5ulukca6lnCV9IQXUWN04fqb_R6Lpx_xPd5CdcS73Hyc&quot;);">
+</div>
+</div>
+<!-- Item Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex border border-outline-variant/10 hover:shadow-md transition-shadow">
+<div class="p-md flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-xs">كريم ثوم كلاسيك</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">صلصة الثوم المميزة المحضرة يومياً.</p>
+</div>
+<div class="flex items-center justify-between mt-md">
+<span class="font-title-lg text-title-lg text-primary">2,500 ل.س</span>
+<button class="bg-primary-container text-on-primary-container w-10 h-10 rounded-lg flex items-center justify-center hover:scale-105 active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+<div class="w-32 h-32 md:w-40 md:h-40 bg-cover bg-center shrink-0" data-alt="A small white ceramic bowl filled with silky smooth, white garlic cream sauce. Garnished with a single leaf of parsley. The lighting is soft and bright, emphasizing the creamy texture. Minimalist and clean aesthetic." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCB4_qHz7LsnpzNxsGDSjzdxk4pU1Qsna0JXxXvx-1MFuzw5Nb_S2zdorO29lVk2Ta_UWKCYv-JkDJtz3kPGxhgI_OyUBsiGR4ozJ7o8ZNDIkDYpJc10KHkszgI6OIvT_NIylIyBH4oXQ799fJWIw9T5O1_vARjZedX2P2b73U-5MF4_pZCIzPMlNOAOZnJDsUe6yV7F8kFStyIMcGZ8iGM9EPlnVMYWQUU623L665D3I7fruyxX4apIIm7oQTo5NG6rNhIShEmq9s&quot;);">
+</div>
+</div>
+<!-- Item Card 4 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex border border-outline-variant/10 hover:shadow-md transition-shadow">
+<div class="p-md flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-xs">صحن بطاطا مقلية</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">بطاطا ذهبية مقرمشة مع بهارات السويداء الخاصة.</p>
+</div>
+<div class="flex items-center justify-between mt-md">
+<span class="font-title-lg text-title-lg text-primary">6,000 ل.س</span>
+<button class="bg-primary-container text-on-primary-container w-10 h-10 rounded-lg flex items-center justify-center hover:scale-105 active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+<div class="w-32 h-32 md:w-40 md:h-40 bg-cover bg-center shrink-0" data-alt="A heap of golden, crispy french fries served in a stylish paper cone. The fries are lightly dusted with reddish spices. The lighting is warm and golden, making the food look irresistibly crunchy. Set on a marble surface." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBkKJOmICNzpgB7C5bQE3A0W5XQI8iFxp8kv_wBJizyymLWK1tlc1WKM1sw0lKTDXn-AKq1wwC7fCM3r8QLM0Ws0-DEI4-fHXC3ccVde_DmYNeOUKWEP921GdDFgqnq7vBVjnyseaNLw1soXblzTTkXSqqpASY8fcPncw_jiDRWJPd4JIV58kkmvK5m1xKNvgEjep_nMs0XzDnf1JP2tYC5ZXty-wHp8MQtwKgjJOD0auSR0JGScc3yErwJ0xWCuKFbAflrjAuAc4I&quot;);">
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Floating Cart Button -->
+<div class="fixed bottom-container-margin left-container-margin right-container-margin z-50">
+<button class="w-full h-14 bg-primary-container text-on-primary-container rounded-xl shadow-lg flex items-center justify-between px-lg hover:brightness-110 active:scale-95 transition-all duration-200">
+<div class="flex items-center gap-md">
+<div class="bg-secondary text-on-secondary w-7 h-7 rounded-full flex items-center justify-center font-bold text-label-sm">2</div>
+<span class="font-title-lg text-title-lg">عرض السلة</span>
+</div>
+<span class="font-title-lg text-title-lg font-bold">30,500 ل.س</span>
+</button>
+</div>
+<!-- Bottom Navigation Shell (Top-level destination only) -->
+<nav class="fixed bottom-0 left-0 w-full z-40 bg-surface dark:bg-surface-container-lowest shadow-[0_-2px_10px_rgba(166,30,34,0.04)] rounded-t-xl hidden md:flex justify-around items-center px-4 pb-4 pt-2">
+<div class="flex flex-col items-center justify-center text-primary dark:text-primary-fixed relative after:content-[''] after:absolute after:-bottom-1 after:w-1 after:h-1 after:bg-secondary after:rounded-full">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-sm text-label-sm">الرئيسية</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant opacity-60">
+<span class="material-symbols-outlined" data-icon="receipt_long">receipt_long</span>
+<span class="font-label-sm text-label-sm">الطلبات</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant opacity-60">
+<span class="material-symbols-outlined" data-icon="local_offer">local_offer</span>
+<span class="font-label-sm text-label-sm">العروض</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant opacity-60">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label-sm text-label-sm">حسابي</span>
+</div>
+</nav>
+<script>
+        // Simple scroll effect for the header
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('top-nav');
+            if (window.scrollY > 100) {
+                header.classList.add('bg-white/95', 'shadow-sm', 'backdrop-blur-md');
+                header.classList.remove('bg-transparent');
+            } else {
+                header.classList.remove('bg-white/95', 'shadow-sm', 'backdrop-blur-md');
+                header.classList.add('bg-transparent');
+            }
+        });
+    </script>
+
+
+</body></html>

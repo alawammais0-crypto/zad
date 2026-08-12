@@ -1,0 +1,247 @@
+<!DOCTYPE html><html dir="rtl" lang="ar" style="width: 390px; height: 1082px; overflow: hidden; position: relative;"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>السويداء - تجربة طعام فاخرة</title>
+<!-- Google Fonts: Cairo for Headlines, Inter for Labels -->
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#e5e2e1",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed-variant": "#900a15",
+                        "surface-container-low": "#f6f3f2",
+                        "on-error": "#ffffff",
+                        "surface-container": "#f0eded",
+                        "outline-variant": "#e2bebb",
+                        "inverse-on-surface": "#f3f0ef",
+                        "on-error-container": "#93000a",
+                        "secondary": "#735c00",
+                        "outline": "#8e706d",
+                        "on-tertiary": "#ffffff",
+                        "primary": "#83000f",
+                        "on-secondary-container": "#745c00",
+                        "on-surface-variant": "#5a413e",
+                        "on-tertiary-container": "#ffb9b3",
+                        "secondary-container": "#fed65b",
+                        "surface-container-high": "#eae7e7",
+                        "on-background": "#1b1b1c",
+                        "surface": "#fcf9f8",
+                        "tertiary-fixed": "#ffdad7",
+                        "on-tertiary-fixed-variant": "#881e1e",
+                        "surface-tint": "#b3282a",
+                        "primary-fixed-dim": "#ffb3ad",
+                        "inverse-primary": "#ffb3ad",
+                        "secondary-fixed": "#ffe088",
+                        "tertiary-fixed-dim": "#ffb3ad",
+                        "primary-container": "#a61e22",
+                        "background": "#ffffff",
+                        "surface-container-highest": "#e5e2e1",
+                        "tertiary": "#7c1417",
+                        "primary-fixed": "#ffdad7",
+                        "error": "#ba1a1a",
+                        "surface-bright": "#fcf9f8",
+                        "inverse-surface": "#303030",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#dcd9d9",
+                        "on-secondary-fixed-variant": "#574500",
+                        "on-primary": "#ffffff",
+                        "on-surface": "#1b1b1c",
+                        "secondary-fixed-dim": "#e9c349",
+                        "on-tertiary-fixed": "#410004",
+                        "tertiary-container": "#9c2d2b",
+                        "on-primary-fixed": "#410004",
+                        "on-secondary-fixed": "#241a00",
+                        "on-primary-container": "#ffb9b4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "sm": "12px",
+                        "xl": "32px",
+                        "gutter": "16px",
+                        "lg": "24px",
+                        "base": "8px",
+                        "container-margin": "20px",
+                        "md": "16px",
+                        "xs": "4px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Cairo"],
+                        "title-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Cairo"],
+                        "label-sm": ["Inter"],
+                        "display-lg": ["Cairo"],
+                        "headline-md": ["Cairo"],
+                        "label-md": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .fill-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+        body {
+            background-color: #ffffff;
+            overflow-x: hidden;
+        }
+        .bento-card {
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .bento-card:hover {
+            transform: translateY(-4px);
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Floating character animation */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        .floating-mascot {
+            animation: float 4s ease-in-out infinite;
+        }
+
+        /* Pulse effect for primary button */
+        @keyframes soft-pulse {
+            0% { box-shadow: 0 0 0 0 rgba(166, 30, 34, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(166, 30, 34, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(166, 30, 34, 0); }
+        }
+        .btn-pulse {
+            animation: soft-pulse 2s infinite;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-background">
+<!-- Top Navigation Anchor -->
+<header class="fixed top-0 left-0 w-full z-50 bg-surface/80 backdrop-blur-md flex justify-between items-center px-container-margin py-base shadow-sm">
+<div class="flex items-center gap-md">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center overflow-hidden border border-secondary/20">
+<img alt="Gold Logo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiDdO_indTwEeB4ptepLJVyHR-v69vfkXhRaOfPuv900laDr-p6-yBNDxblhfalUG-uEZOqWKhHIdiMyocBDsLIVA--uXYeUDOvKMGKTMnVNqSRLDbd0jVSOGjgyQapRukkQPXCRhTLkFejK8wEqSNeQzP14D0m0yOEasbH4a4EC57nvYETZX8JtgDshSyf06EwFkhXDy9b7g9K9adNTxQjowpL5j3hJihdvnPxOWb9tds3Lm_eP58m6uDan3a3CRcJXH8fAuhG-0">
+</div>
+<h1 class="font-headline-md text-headline-md font-bold text-primary">السويداء - المدينة</h1>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-primary">search</span>
+</button>
+</header>
+<main class="min-h-screen pt-24 pb-32 flex flex-col items-center px-container-margin">
+<!-- Hero Section -->
+<section class="w-full max-w-4xl flex flex-col items-center text-center mb-xl">
+<!-- 3D Mascot Focal Point -->
+<div class="relative w-full max-w-[360px] aspect-square mb-lg fade-in">
+<!-- Subtle glow effect behind mascot -->
+<div class="absolute inset-0 bg-secondary/10 rounded-full blur-3xl scale-75 animate-pulse"></div>
+<img alt="Mascot" class="relative z-10 w-full h-full object-contain floating-mascot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKpYHA97tyArhx7PmsgvzICT9H1WQKpOR8Mm6UichMG9j2PJRvmjIswd1IFtLVxhOcGqEjkJA10PmJBHJV4nhUDi6qED-5mZeuZ6ZAoCmSL54CvqrZdNsXKJenZgLuSlnGEGAXa16Obdt_wiBv0OmoYI8oAlJ6_jDEB2JGS0iuLkgZk9GC77S3Fr19-ofIk-KKdTNptq8nnC1UuI0nfPE4pRiD-ZvqvNCjE8JI2T-fhlQPdO1XkOUlQC5Y5swFI2yT9fNYPik7HhI">
+</div>
+<!-- Welcome Text -->
+<div class="space-y-sm fade-in" style="animation-delay: 0.2s;">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight">أهلا و سهلاً</h2>
+<p class="font-headline-md text-headline-md text-on-surface-variant font-medium">شو عبالك تاكل اليوم؟</p>
+</div>
+<!-- CTA Actions -->
+<div class="mt-xl w-full max-w-sm flex flex-col gap-md fade-in" style="animation-delay: 0.4s;">
+<button class="btn-pulse w-full py-md bg-primary-container text-on-primary rounded-xl font-title-lg text-title-lg shadow-lg active:scale-95 duration-100 transition-all">
+                    ابدأ الآن
+                </button>
+<button class="w-full py-md bg-surface border-2 border-primary-container text-primary rounded-xl font-title-lg text-title-lg hover:bg-surface-container-low active:scale-95 duration-100 transition-all">
+                    تصفح المطاعم
+                </button>
+</div>
+</section>
+<!-- Features Grid (Bento Style) -->
+<section class="w-full max-w-5xl mt-auto grid grid-cols-2 md:grid-cols-4 gap-gutter fade-in" style="animation-delay: 0.6s;">
+<!-- Delivery -->
+<div class="bento-card bg-surface-container-low p-md rounded-xl flex flex-col items-center text-center gap-xs">
+<span class="material-symbols-outlined text-[32px] text-secondary fill-icon">moped</span>
+<span class="font-label-md text-label-md text-primary font-bold">توصيل سريع</span>
+</div>
+<!-- Quality -->
+<div class="bento-card bg-surface-container-low p-md rounded-xl flex flex-col items-center text-center gap-xs">
+<span class="material-symbols-outlined text-[32px] text-secondary fill-icon">verified</span>
+<span class="font-label-md text-label-md text-primary font-bold">جودة مضمونة</span>
+</div>
+<!-- Offers -->
+<div class="bento-card bg-surface-container-low p-md rounded-xl flex flex-col items-center text-center gap-xs">
+<span class="material-symbols-outlined text-[32px] text-secondary fill-icon">payments</span>
+<span class="font-label-md text-label-md text-primary font-bold">عروض حصرية</span>
+</div>
+<!-- Support -->
+<div class="bento-card bg-surface-container-low p-md rounded-xl flex flex-col items-center text-center gap-xs">
+<span class="material-symbols-outlined text-[32px] text-secondary fill-icon">headset_mic</span>
+<span class="font-label-md text-label-md text-primary font-bold">دعم متواصل</span>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Shell -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-4 pt-2 bg-surface rounded-t-xl shadow-lg border-t border-surface-container">
+<a class="flex flex-col items-center justify-center text-primary relative after:content-[''] after:absolute after:-bottom-1 after:w-1 after:h-1 after:bg-secondary after:rounded-full scale-110 duration-200 ease-out" href="#">
+<span class="material-symbols-outlined fill-icon">home</span>
+<span class="font-label-sm text-label-sm">الرئيسية</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-60 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">receipt_long</span>
+<span class="font-label-sm text-label-sm">الطلبات</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-60 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">local_offer</span>
+<span class="font-label-sm text-label-sm">العروض</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-60 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-sm text-label-sm">حسابي</span>
+</a>
+</nav>
+<script>
+        // Simple micro-interaction for buttons
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('mousedown', () => {
+                button.classList.add('scale-95');
+            });
+            button.addEventListener('mouseup', () => {
+                button.classList.remove('scale-95');
+            });
+            button.addEventListener('mouseleave', () => {
+                button.classList.remove('scale-95');
+            });
+        });
+</script>
+
+</body></html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html><html dir="rtl" lang="ar"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>ZAD - Al-Mashnaqa Premium Splash</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#83000f",
+                        "primary-container": "#a61e22",
+                        "secondary": "#735c00",
+                        "secondary-container": "#fed65b",
+                        "on-secondary-container": "#745c00",
+                        "surface": "#fcf9f8",
+                        "background": "#fcf9f8",
+                        "gold-accent": "#D4AF37"
+                    },
+                    "fontFamily": {
+                        "headline": ["Cairo", "sans-serif"],
+                        "body": ["Inter", "sans-serif"]
+                    },
+                    "spacing": {
+                        "container-margin": "20px"
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #83000f;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        /* Deep Royal Red Gradient Background */
+        .splash-container {
+            background: radial-gradient(circle at center, #a61e22 0%, #83000f 70%, #5a000a 100%);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        /* The CSS Golden Halo */
+        .golden-halo {
+            position: absolute;
+            width: 420px;
+            height: 420px;
+            border-radius: 50%;
+            border: 2px solid transparent;
+            /* Arc effect using mask and gradient */
+            background: conic-gradient(from 270deg, transparent 0%, #D4AF37 25%, #fed65b 50%, #D4AF37 75%, transparent 100%);
+            -webkit-mask: radial-gradient(farthest-side, transparent 96%, black 97%);
+            mask: radial-gradient(farthest-side, transparent 96%, black 97%);
+            filter: blur(1px) drop-shadow(0 0 25px rgba(212, 175, 55, 0.6));
+            opacity: 0.8;
+            animation: haloPulse 4s ease-in-out infinite alternate;
+        }
+
+        /* Inner glow layer for the halo */
+        .halo-glow {
+            position: absolute;
+            width: 440px;
+            height: 440px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%);
+            filter: blur(40px);
+        }
+
+        @keyframes haloPulse {
+            0% { transform: scale(1) rotate(0deg); opacity: 0.6; }
+            100% { transform: scale(1.05) rotate(5deg); opacity: 0.9; }
+        }
+
+        /* Floating Logo Container */
+        .hero-section {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .floating-logo {
+            width: 280px;
+            height: 280px;
+            object-fit: contain;
+            /* High-end 3D floating effect using drop shadow */
+            filter: drop-shadow(0 30px 40px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 10px rgba(212, 175, 55, 0.2));
+            animation: floatLogo 6s ease-in-out infinite;
+        }
+
+        @keyframes floatLogo {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* Tagline Typography */
+        .tagline {
+            position: absolute;
+            bottom: 120px;
+            color: white;
+            font-family: 'Cairo', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInText 1.5s ease-out forwards 0.5s;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes fadeInText {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Loading Bar */
+        .loading-container {
+            position: absolute;
+            bottom: 40px;
+            width: 200px;
+            height: 1px;
+            background: rgba(212, 175, 55, 0.2);
+            overflow: hidden;
+        }
+
+        .loading-progress {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+            transform: translateX(-100%);
+            animation: loadingMove 2.5s cubic-bezier(0.65, 0.05, 0.36, 1) infinite;
+        }
+
+        @keyframes loadingMove {
+            0% { transform: translateX(-100%); }
+            50% { transform: translateX(0%); }
+            100% { transform: translateX(100%); }
+        }
+
+        /* Noise Texture Overlay */
+        .noise-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.03;
+            pointer-events: none;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-primary overflow-hidden">
+<div class="splash-container">
+<!-- Subtle noise for luxury feel -->
+<div class="noise-overlay"></div>
+<!-- Ambient Glow Elements -->
+<div class="halo-glow"></div>
+<div class="golden-halo"></div>
+<!-- Hero Logo Section -->
+<div class="hero-section">
+<img alt="ZAD Al-Mashnaqa Gold Logo" class="floating-logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvDdfWB7a8lUxjBdrynEVJqjxO_kWhu3BNIw4gKDVZ7DwC78Iw0XhuF3vYcDqX82IV-FIJ1y77Z2HmecjkXYiKNw9KyIzDxRm3VECF5nHKZm9klKe49Z1IgqdzszHPKYt_TVaG36EQW2gvRQ-YxkKbEOrC0WJBucZUpo_K28X5CYHK8vCAGyXGTxxzGBCn7DAOxQsIpU-1tukzfIohSe0FokmEGtD4N7xTp2MTpaXhJ52dz7h1KfwWKCTtJSjfV7VCLhOK81UC2l8">
+</div>
+<!-- Arabic Tagline -->
+<p class="tagline">دليلك لمطاعم السويداء<div><br></div></p>
+<!-- Minimalist Loading Bar -->
+<div class="loading-container">
+<div class="loading-progress"></div>
+</div>
+</div>
+<!-- Script for a subtle interaction: tilt logo slightly on mouse move (Desktop Only) -->
+<script>
+        const hero = document.querySelector('.hero-section');
+        const logo = document.querySelector('.floating-logo');
+
+        if (window.innerWidth > 768) {
+            document.addEventListener('mousemove', (e) => {
+                const xAxis = (window.innerWidth / 2 - e.pageX) / 45;
+                const yAxis = (window.innerHeight / 2 - e.pageY) / 45;
+                logo.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+            });
+
+            document.addEventListener('mouseleave', () => {
+                logo.style.transform = `rotateY(0deg) rotateX(0deg)`;
+                logo.style.transition = "all 0.5s ease";
+            });
+
+            document.addEventListener('mouseenter', () => {
+                logo.style.transition = "none";
+            });
+        }
+    </script>
+
+
+</body></html>
