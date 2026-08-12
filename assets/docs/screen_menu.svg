@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 640" width="360" height="640">
+  <defs>
+    <linearGradient id="brandRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a61e22"/>
+      <stop offset="100%" stop-color="#83000f"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Phone Frame -->
+  <rect width="360" height="640" rx="36" fill="#FCF9F8" stroke="#a61e22" stroke-width="4"/>
+  <rect x="130" y="14" width="100" height="18" rx="9" fill="#e0e0e0"/>
+
+  <!-- Restaurant Header Banner -->
+  <rect x="0" y="0" width="360" height="150" rx="36" fill="url(#brandRed)"/>
+  <text x="24" y="70" font-family="sans-serif" font-size="22" font-weight="extrabold" fill="#ffffff">Royal Palace Menu</text>
+  <text x="24" y="94" font-family="sans-serif" font-size="13" fill="#F4D35E">★ 4.8 (142 reviews) • 25-35 min • Min 50k SYP</text>
+  <text x="24" y="116" font-family="sans-serif" font-size="12" fill="#ffffff" opacity="0.85">Eastern &amp; Western Cuisine • Grills • Breakfast</text>
+
+  <!-- Menu Category Tabs -->
+  <rect x="24" y="164" width="80" height="30" rx="15" fill="#83000f"/>
+  <text x="64" y="184" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">Pizza</text>
+
+  <rect x="112" y="164" width="90" height="30" rx="15" fill="#EAE7E7"/>
+  <text x="157" y="184" font-family="sans-serif" font-size="12" font-weight="bold" fill="#444" text-anchor="middle">Shawarma</text>
+
+  <rect x="210" y="164" width="80" height="30" rx="15" fill="#EAE7E7"/>
+  <text x="250" y="184" font-family="sans-serif" font-size="12" font-weight="bold" fill="#444" text-anchor="middle">Drinks</text>
+
+  <!-- Menu Item Card 1 -->
+  <g transform="translate(24, 210)" filter="url(#shadow)">
+    <rect width="312" height="106" rx="16" fill="#ffffff" stroke="#eee"/>
+    <rect x="12" y="13" width="80" height="80" rx="12" fill="#a61e22"/>
+    <text x="52" y="60" font-family="sans-serif" font-size="28" text-anchor="middle">🍕</text>
+    <text x="104" y="34" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1b1b1c">Super Supreme Family Pizza</text>
+    <text x="104" y="52" font-family="sans-serif" font-size="10" fill="#666">Tomato sauce, mozzarella, pepperoni, olives</text>
+    <text x="104" y="80" font-family="sans-serif" font-size="14" font-weight="bold" fill="#83000f">65,000 SYP</text>
+    
+    <rect x="252" y="60" width="48" height="32" rx="10" fill="#83000f"/>
+    <text x="276" y="81" font-family="sans-serif" font-size="18" font-weight="bold" fill="#fff" text-anchor="middle">+</text>
+  </g>
+
+  <!-- Menu Item Card 2 -->
+  <g transform="translate(24, 328)" filter="url(#shadow)">
+    <rect width="312" height="106" rx="16" fill="#ffffff" stroke="#eee"/>
+    <rect x="12" y="13" width="80" height="80" rx="12" fill="#FED65B"/>
+    <text x="52" y="60" font-family="sans-serif" font-size="28" text-anchor="middle">🍕</text>
+    <text x="104" y="34" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1b1b1c">Classic Margherita Pizza</text>
+    <text x="104" y="52" font-family="sans-serif" font-size="10" fill="#666">Fresh tomato sauce, mozzarella, basil leaves</text>
+    <text x="104" y="80" font-family="sans-serif" font-size="14" font-weight="bold" fill="#83000f">50,000 SYP</text>
+    
+    <rect x="252" y="60" width="48" height="32" rx="10" fill="#83000f"/>
+    <text x="276" y="81" font-family="sans-serif" font-size="18" font-weight="bold" fill="#fff" text-anchor="middle">+</text>
+  </g>
+
+  <!-- Menu Item Card 3 -->
+  <g transform="translate(24, 446)" filter="url(#shadow)">
+    <rect width="312" height="106" rx="16" fill="#ffffff" stroke="#eee"/>
+    <rect x="12" y="13" width="80" height="80" rx="12" fill="#e0e0e0"/>
+    <text x="52" y="60" font-family="sans-serif" font-size="28" text-anchor="middle">🍹</text>
+    <text x="104" y="34" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1b1b1c">Fresh Orange Juice 1L</text>
+    <text x="104" y="52" font-family="sans-serif" font-size="10" fill="#666">100% natural freshly squeezed orange juice</text>
+    <text x="104" y="80" font-family="sans-serif" font-size="14" font-weight="bold" fill="#83000f">15,000 SYP</text>
+    
+    <rect x="252" y="60" width="48" height="32" rx="10" fill="#83000f"/>
+    <text x="276" y="81" font-family="sans-serif" font-size="18" font-weight="bold" fill="#fff" text-anchor="middle">+</text>
+  </g>
+</svg>

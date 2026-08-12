@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 640" width="360" height="640">
+  <defs>
+    <linearGradient id="brandRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a61e22"/>
+      <stop offset="100%" stop-color="#83000f"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Phone Frame -->
+  <rect width="360" height="640" rx="36" fill="#FCF9F8" stroke="#a61e22" stroke-width="4"/>
+  <rect x="130" y="14" width="100" height="18" rx="9" fill="#e0e0e0"/>
+
+  <!-- Profile Header Banner -->
+  <rect x="0" y="0" width="360" height="160" fill="url(#brandRed)"/>
+  <circle cx="180" cy="64" r="36" fill="#ffffff" stroke="#D4AF37" stroke-width="3"/>
+  <text x="180" y="74" font-family="sans-serif" font-size="24" text-anchor="middle">👩‍🦰</text>
+  <text x="180" y="120" font-family="sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">Mais Alawam</text>
+  <text x="180" y="138" font-family="sans-serif" font-size="11" fill="rgba(255,255,255,0.8)" text-anchor="middle">com@gmail.alawammais • Gold Member 🌟</text>
+
+  <!-- Stats Banner -->
+  <rect x="24" y="150" width="312" height="60" rx="14" fill="#ffffff" stroke="#eee" filter="url(#shadow)"/>
+  <text x="76" y="176" font-family="sans-serif" font-size="14" font-weight="extrabold" fill="#83000f" text-anchor="middle">1,250</text>
+  <text x="76" y="194" font-family="sans-serif" font-size="10" fill="#777" text-anchor="middle">Points</text>
+
+  <line x1="128" y1="162" x2="128" y2="198" stroke="#eee" stroke-width="1"/>
+
+  <text x="180" y="176" font-family="sans-serif" font-size="14" font-weight="extrabold" fill="#83000f" text-anchor="middle">12</text>
+  <text x="180" y="194" font-family="sans-serif" font-size="10" fill="#777" text-anchor="middle">Orders</text>
+
+  <line x1="232" y1="162" x2="232" y2="198" stroke="#eee" stroke-width="1"/>
+
+  <text x="284" y="176" font-family="sans-serif" font-size="14" font-weight="extrabold" fill="#83000f" text-anchor="middle">45,000</text>
+  <text x="284" y="194" font-family="sans-serif" font-size="10" fill="#777" text-anchor="middle">Balance (SYP)</text>
+
+  <!-- Modal Sheet View Overlay -->
+  <rect x="0" y="230" width="360" height="410" rx="28" fill="rgba(0,0,0,0.5)"/>
+  <rect x="0" y="270" width="360" height="370" rx="28" fill="#ffffff" filter="url(#shadow)"/>
+
+  <text x="24" y="306" font-family="sans-serif" font-size="16" font-weight="bold" fill="#1b1b1c">Edit Profile ✨</text>
+  <text x="320" y="306" font-family="sans-serif" font-size="16" fill="#888" text-anchor="end">✕</text>
+
+  <!-- Input 1 -->
+  <text x="24" y="338" font-family="sans-serif" font-size="11" font-weight="bold" fill="#555">Full Name</text>
+  <rect x="24" y="348" width="312" height="38" rx="8" fill="#FCF9F8" stroke="#ccc"/>
+  <text x="36" y="372" font-family="sans-serif" font-size="12" fill="#1b1b1c">Mais Alawam</text>
+
+  <!-- Input 2 -->
+  <text x="24" y="402" font-family="sans-serif" font-size="11" font-weight="bold" fill="#555">Email Address</text>
+  <rect x="24" y="412" width="312" height="38" rx="8" fill="#FCF9F8" stroke="#ccc"/>
+  <text x="36" y="436" font-family="sans-serif" font-size="12" fill="#1b1b1c">com@gmail.alawammais</text>
+
+  <!-- Input 3 -->
+  <text x="24" y="466" font-family="sans-serif" font-size="11" font-weight="bold" fill="#555">Phone Number</text>
+  <rect x="24" y="476" width="312" height="38" rx="8" fill="#FCF9F8" stroke="#ccc"/>
+  <text x="36" y="500" font-family="sans-serif" font-size="12" fill="#1b1b1c">+963 911 111 111</text>
+
+  <!-- Save Button -->
+  <rect x="24" y="534" width="312" height="48" rx="12" fill="#83000f" filter="url(#shadow)"/>
+  <text x="180" y="564" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">Save Changes</text>
+</svg>

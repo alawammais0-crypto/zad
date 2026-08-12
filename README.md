@@ -10,75 +10,76 @@ ZAD is a full-stack food delivery application built for Suwayda, Syria. It combi
 
 ---
 
-## Application Screenshots & Interface Breakdown
+## 📱 Real Application Interfaces
 
 ![ZAD Mobile Application Screens](./assets/docs/app_preview.svg)
 
-### Complete Screen Architecture
+---
 
-| # | Screen | Description | Path |
-| :-: | :--- | :--- | :--- |
-| **1** | **Splash & Onboarding** | Animated entrance screen featuring a pulsing halo rotation, floating brand emblem, and smooth onboarding redirect. | `src/app/index.tsx`<br>`src/app/(onboarding)/welcome.tsx` |
-| **2** | **Home & Discovery** | Main feed displaying delivery location, search bar, active category chips, promotional banner slideshow, and top-rated restaurant listings. | `src/app/(tabs)/home.tsx` |
-| **3** | **Food Categories** | Categorized listings for Pizza, Shawarma, Burgers, Broasted Chicken, Grills, Desserts, and Drinks. | `src/app/category/index.tsx`<br>`src/app/category/[id].tsx` |
-| **4** | **Restaurant & Menu** | Detailed restaurant page showcasing ratings, delivery times, category tab filters, and menu items with quick add-to-cart buttons. | `src/app/restaurant/[id].tsx` |
-| **5** | **Cart & Checkout** | Interactive shopping cart supporting item quantity adjustments, delivery address confirmation, subtotal/fee breakdown, and cash/wallet payment selection. | `src/app/cart.tsx` |
-| **6** | **Live Order Tracking** | Active order dashboard with a step-by-step progress indicator (`Order Received` ➔ `Preparing` ➔ `Out for Delivery` ➔ `Delivered`), direct driver hotline, and order history. | `src/app/(tabs)/orders.tsx` |
-| **7** | **Offers & Discounts** | Dedicated promotions feed displaying active coupons, percentage discounts, and free delivery vouchers. | `src/app/(tabs)/offers.tsx` |
-| **8** | **Account & Profile** | User dashboard presenting total points, completed orders, and digital wallet balance. | `src/app/(tabs)/profile.tsx` |
-| **9** | **Profile Modals** | Slide-up modals for Edit Profile, Address Management, Payment & Wallet Top-up, Favorite Restaurants, Rewards, and Help Center. | `src/features/profile/*.tsx` |
+## 🚀 Screen-by-Screen Breakdown
+
+### 1. Animated Splash & Onboarding (`src/app/index.tsx`, `welcome.tsx`)
+- Rotational and scale animations using Reanimated 4.
+- Delayed entrance effects for action buttons and tagline text.
+- Direct redirection to the onboarding walkthrough or home screen.
+
+### 2. Home Feed & Category Discovery (`src/app/(tabs)/home.tsx`)
+- Quick category filters: Pizza, Shawarma, Burgers, Broasted Chicken, Grills, Sweets, and Drinks.
+- Interactive promotional discount banners.
+- Restaurant cards with ratings, cuisine tags, distance indicators, and free delivery markers.
+
+### 3. Restaurant Details & Menu (`src/app/restaurant/[id].tsx`)
+- Header banner showing restaurant rating, review count, average delivery duration, and minimum order requirements.
+- Category tab bar filters.
+- Item list with pricing, descriptions, images, and add-to-cart buttons.
+
+### 4. Shopping Cart & Checkout (`src/app/cart.tsx`)
+- Dynamic item quantity adjustment.
+- Confirmed delivery address preview.
+- Invoice itemization (subtotal, delivery fee, grand total).
+- One-tap checkout action triggering order submission, cart reset, points accumulation, and redirection to live tracking.
+
+### 5. Real-Time Order Tracking (`src/app/(tabs)/orders.tsx`)
+- Live status workflow (`Preparing 👨‍🍳` ➔ `Out for Delivery 🛵` ➔ `Delivered 🎉`).
+- Estimated arrival countdown timer and progress indicator.
+- Direct driver phone call trigger (`📞 Call Delivery Driver`).
+- One-tap re-order button to repopulate the cart with items from previous orders.
+
+### 6. Account, Wallet & Profile Modals (`src/app/(tabs)/profile.tsx`)
+- **Edit Profile**: Modify user full name, email, phone number, and avatar presets with instant store updates.
+- **Address Manager**: Manage default and additional delivery addresses.
+- **Payment & Wallet**: Choose payment method (Cash on Delivery, Syriatel Cash, Card) and recharge wallet balance (+10,000, +25,000, +50,000 SYP).
+- **Golden Rewards**: Earn 10 points per 1,000 SYP spent and convert 1,000 points into a 10,000 SYP wallet discount.
+- **Support & FAQs**: Searchable accordion view covering frequent questions and direct support channels (WhatsApp & Phone).
 
 ---
 
-## Interactive Features & Modals
-
-### 1. Edit Profile Modal (`EditProfileModal.tsx`)
-- Form inputs for user full name, email address, and mobile phone number.
-- Avatar preset selector with immediate synchronization across global state.
-
-### 2. Delivery Address Manager (`AddressesModal.tsx`)
-- Address list view distinguishing default and secondary delivery locations.
-- Form to add new addresses with region name, street address, building floor, and delivery instructions.
-- One-tap default address toggle and deletion options.
-
-### 3. Payment Methods & Digital Wallet (`PaymentMethodsModal.tsx`)
-- Payment selector supporting Cash on Delivery (COD), ZAD Wallet Balance, Syriatel Cash, and Bank Cards.
-- Wallet top-up controls with quick recharge presets (+10,000, +25,000, +50,000 SYP).
-
-### 4. Loyalty Rewards Program (`RewardsModal.tsx`)
-- Points balance tracker earning 10 points for every 1,000 SYP spent.
-- Redemption mechanism converting 1,000 points into a 10,000 SYP wallet credit.
-- Gold Member perks overview (free delivery on eligible orders, priority preparation).
-
-### 5. Help Center & FAQs (`HelpCenterModal.tsx`)
-- Instant search filter for support topics.
-- Expandable accordion views covering order tracking, local payment options, order cancellation, and rewards.
-
-### 6. Customer Support (`ContactUsModal.tsx`)
-- Quick action buttons for direct phone support (`+963 999 000 111`) and WhatsApp chat (`+963 988 111 222`).
-- Feedback and inquiry form submission.
-
----
-
-## System Architecture
+## 🏗️ System Architecture
 
 ```text
 zad/
-├── assets/                         # SVG graphics and UI previews
-│   └── docs/app_preview.svg
+├── assets/                         # Documentation graphics & screen SVG previews
+│   └── docs/
+│       ├── app_preview.svg         # Real UI 6-screen banner
+│       ├── screen_splash.svg       # Splash screen graphic
+│       ├── screen_home.svg         # Home feed graphic
+│       ├── screen_menu.svg         # Restaurant menu graphic
+│       ├── screen_cart.svg         # Cart & invoice graphic
+│       ├── screen_orders.svg       # Order tracking graphic
+│       └── screen_profile.svg      # Account & modal graphic
 │
 ├── backend/                        # ASP.NET Core 10 Web API
-│   ├── YallaFood.Api/              # API Controllers, Middlewares, Program.cs
+│   ├── YallaFood.Api/              # Controllers, Middlewares, Program.cs
 │   ├── YallaFood.Application/      # Application Services, Interfaces, DTOs
-│   ├── YallaFood.Domain/           # Entities (User, Order, Restaurant, Product)
-│   ├── YallaFood.Infrastructure/   # DbContext, Migrations, Initial Seed
-│   └── YallaFood.slnx              # Solution Manifest
+│   ├── YallaFood.Domain/           # Core Entities (User, Order, Restaurant, Product)
+│   ├── YallaFood.Infrastructure/   # DbContext, Migrations, Seed Data
+│   └── YallaFood.slnx              # Solution file
 │
 └── zad-app/                        # React Native Mobile App
     ├── src/
-    │   ├── app/                    # File-based routes (Tabs, Cart, Onboarding)
-    │   ├── components/             # Reusable UI cards, badges, and headers
-    │   ├── features/               # Feature-specific modals and components
+    │   ├── app/                    # Expo Router file-based pages
+    │   ├── components/             # Reusable UI elements
+    │   ├── features/               # Modals & feature modules
     │   ├── store/                  # Zustand stores (Auth, Cart, Orders, Favorites)
     │   └── theme/                  # Design tokens (Colors, Typography, Spacing)
     └── package.json
@@ -86,7 +87,7 @@ zad/
 
 ---
 
-## Tech Stack
+## ⚙️ Tech Stack
 
 ### Mobile Frontend
 - **Framework**: [Expo](https://expo.dev) (v54) with **React Native** (v0.81)
@@ -104,7 +105,7 @@ zad/
 
 ---
 
-## API Endpoints Summary
+## 📡 API Endpoints Summary
 
 | Method | Endpoint | Description |
 | :--- | :--- | :--- |
@@ -117,7 +118,7 @@ zad/
 
 ---
 
-## Local Development Setup
+## 🚀 Local Development Setup
 
 ### Prerequisites
 - Node.js (v18+)
@@ -130,7 +131,7 @@ zad/
 cd backend/YallaFood.Api
 dotnet run
 ```
-The Web API server runs at `http://localhost:5086` with Swagger available at `http://localhost:5086/swagger`.
+The API server runs at `http://localhost:5086` with Swagger available at `http://localhost:5086/swagger`.
 
 ### 2. Run Mobile App
 
@@ -143,12 +144,12 @@ Press `w` to open in browser, `a` for Android Emulator, or scan the QR code usin
 
 ---
 
-## Author
+## 👤 Author
 
 Developed by **Mais Alawam** ([@alawammais0-crypto](https://github.com/alawammais0-crypto)).
 
 ---
 
-## License
+## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).

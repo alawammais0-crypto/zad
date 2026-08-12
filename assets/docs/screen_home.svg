@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 640" width="360" height="640">
+  <defs>
+    <linearGradient id="brandRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a61e22"/>
+      <stop offset="100%" stop-color="#83000f"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Phone Frame -->
+  <rect width="360" height="640" rx="36" fill="#FCF9F8" stroke="#a61e22" stroke-width="4"/>
+  <rect x="130" y="14" width="100" height="18" rx="9" fill="#e0e0e0"/>
+
+  <!-- Top Bar -->
+  <text x="24" y="58" font-family="sans-serif" font-size="12" fill="#777">DELIVER TO</text>
+  <text x="24" y="78" font-family="sans-serif" font-size="16" font-weight="bold" fill="#83000f">Suwayda - Al-Ojeilat 📍</text>
+
+  <!-- Search Bar -->
+  <rect x="24" y="94" width="312" height="42" rx="12" fill="#EAE7E7"/>
+  <text x="54" y="120" font-family="sans-serif" font-size="13" fill="#777">🔍 Search dishes or restaurants...</text>
+
+  <!-- Category Pills Row -->
+  <text x="24" y="162" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1b1b1c">Categories</text>
+
+  <rect x="24" y="174" width="76" height="34" rx="17" fill="#83000f"/>
+  <text x="62" y="196" font-family="sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">🍕 Pizza</text>
+
+  <rect x="108" y="174" width="90" height="34" rx="17" fill="#EAE7E7"/>
+  <text x="153" y="196" font-family="sans-serif" font-size="12" font-weight="bold" fill="#444" text-anchor="middle">🌯 Shawarma</text>
+
+  <rect x="206" y="174" width="80" height="34" rx="17" fill="#EAE7E7"/>
+  <text x="246" y="196" font-family="sans-serif" font-size="12" font-weight="bold" fill="#444" text-anchor="middle">🍔 Burger</text>
+
+  <rect x="294" y="174" width="80" height="34" rx="17" fill="#EAE7E7"/>
+
+  <!-- Promo Banner -->
+  <rect x="24" y="224" width="312" height="110" rx="16" fill="url(#brandRed)" filter="url(#shadow)"/>
+  <text x="44" y="260" font-family="sans-serif" font-size="18" font-weight="extrabold" fill="#FED65B">20% OFF ALL PIZZAS</text>
+  <text x="44" y="284" font-family="sans-serif" font-size="12" fill="#ffffff">Valid on orders above 50,000 SYP</text>
+  <rect x="44" y="296" width="110" height="24" rx="6" fill="rgba(255,255,255,0.2)"/>
+  <text x="99" y="312" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">Use: ZAD2026</text>
+
+  <!-- Popular Restaurants Header -->
+  <text x="24" y="362" font-family="sans-serif" font-size="15" font-weight="bold" fill="#1b1b1c">Popular Restaurants</text>
+
+  <!-- Restaurant Card 1 -->
+  <rect x="24" y="376" width="312" height="100" rx="16" fill="#ffffff" stroke="#eee" filter="url(#shadow)"/>
+  <rect x="36" y="388" width="76" height="76" rx="12" fill="#83000f"/>
+  <text x="74" y="432" font-family="sans-serif" font-size="28" text-anchor="middle">👑</text>
+  <text x="124" y="408" font-family="sans-serif" font-size="15" font-weight="bold" fill="#1b1b1c">Royal Palace</text>
+  <text x="124" y="428" font-family="sans-serif" font-size="11" fill="#666">Eastern &amp; Western • Grills ★ 4.8</text>
+  <text x="124" y="448" font-family="sans-serif" font-size="11" font-weight="bold" fill="#83000f">Free Delivery • 25-35 min</text>
+
+  <!-- Restaurant Card 2 -->
+  <rect x="24" y="488" width="312" height="100" rx="16" fill="#ffffff" stroke="#eee" filter="url(#shadow)"/>
+  <rect x="36" y="500" width="76" height="76" rx="12" fill="#FED65B"/>
+  <text x="74" y="544" font-family="sans-serif" font-size="28" text-anchor="middle">🍕</text>
+  <text x="124" y="520" font-family="sans-serif" font-size="15" font-weight="bold" fill="#1b1b1c">Golden Pizza House</text>
+  <text x="124" y="540" font-family="sans-serif" font-size="11" fill="#666">Italian Pizza • Fast Food ★ 4.7</text>
+  <text x="124" y="560" font-family="sans-serif" font-size="11" font-weight="bold" fill="#83000f">3,000 SYP Delivery • 20 min</text>
+</svg>
